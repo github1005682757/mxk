@@ -101,8 +101,11 @@ GLOBAL.Slide.init = function(id) {
 	$lsBtn.eq(0).addClass("m0 selected");
 	//计算位置
 	$lsImg.each(function(index, element) {
-		var width = $(this).width();
-		$(this).css("marginLeft", -width / 2 + "px");
+		var $this = $(this);
+		$this.find("img").show();
+		var width = $this.width();
+		$this.css("marginLeft", -width / 2 + "px");
+		
 	});
 	//btn点击事件绑定
 	$lsBtn.on({
