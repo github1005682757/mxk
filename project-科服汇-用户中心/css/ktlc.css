@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document for 开通流程 mxk */
+.flow_map h2{ padding:58px 0 47px 0; line-height:20px; font-size:20px; color:#666;}
+.flow_box img{ position:relative; z-index:1;}
+.flow_box a{ position:relative; z-index:2; float:left; margin-top:-100px; width:100px; height:100px; line-height:130px; text-align:center; font-size:16px; color:#fff;}
+.flow_box a:hover{ text-decoration:none;}
+.flow_box a.flow_02{ margin-left:211px;}
+.flow_box a.flow_03{ float:right;}
+.article{ position:relative; z-index:1; margin-top:18px; padding:15px 15px 40px 15px;}
+.article p{ line-height:21px; text-indent:2em; color:#666;}
+.article .link{ position:absolute; right:0; bottom:0; padding:0 19px; height:29px; line-height:29px; background:#f60; color:#fff;}
+.article .link:hover{ text-decoration:none;}
+.article .arrow{ float:left; position:relative; z-index:1; margin:-22px 0 0 27px; width:12px; height:7px; }
+.arrow b{ position:absolute; top:0; left:0;}
+.arrow .b1{width:0; height:0; border-left:6px solid transparent; border-right:6px solid transparent; border-bottom:7px solid #f60;}
+.arrow .b2{ left:1px; top:2px;width:0; height:0; border-left:5px solid transparent; border-right:5px solid transparent; border-bottom:6px solid #fff;}
+

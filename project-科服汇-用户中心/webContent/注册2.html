@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册2</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/register.css">
+</head>
+	
+<body class="bg_c_gr">
+	<!-- header start -->
+	<div id="header" class="w bor_b2_o">
+    	<div class="pc w1190">
+        	<!-- logo start -->
+            <a class="logo fc_o" href="用户中心-首页.html">
+                <img class="fl" src="../images/logo.png" alt="logo" />
+                用户注册
+            </a>
+            <!-- logo end -->
+            <!-- helper start -->
+            <div class="helper">
+            	<ul class="lsFl">
+                    <li class="noBor"><a class="fc_93" href="用户中心-首页.html">返回首页</a></li>
+                    <li class="pr0"><a class="fc_93" href="用户中心-帮助中心.html">帮助中心</a></li>
+                </ul>
+            </div>
+            <!-- helper start -->
+        </div>
+    </div>
+    <!-- header end -->
+    
+    <!-- content start -->
+    <div id="content" class="pc w1190 mt22 noBor">
+    	<div class="bor_03">
+            <!-- box_registerMap start -->
+            <div class="box_registerMap clearfix">
+                <ul class="ls_fl">
+                    <li class="first w289">
+                        <b>1</b>
+                        <span>填写帐号资料</span>
+                        <i></i>
+                    </li>
+                    <li class="second w304 on">
+                        <b>2</b>
+                        <span>激活帐号</span>
+                        <i></i>
+                    </li>
+                    <li class="third w304">
+                        <b>3</b>
+                        <span>注册成功</span>
+                        <i></i>
+                    </li>
+                </ul>
+            </div>
+            <!-- box_registerMap end -->
+            <!-- box_registerBody start -->
+            <div class="box_registerBody">
+                <p class="fm_s">
+                	<span class="fc_r">友情提示：&nbsp;*&nbsp;</span>为必填项
+                </p>
+                <ul class="ls_register ls_32">
+                	<li>
+                    	<label>激活方式：</label>
+                        <p>
+                        	<input class="btn_w108 btn_checked" type="button" value="手机激活" />
+                            <em class="ml15">(亲爱的用户，您选择的注册方式是手机注册)</em>
+                        </p>
+                    </li>
+                    <li>
+                    	<label>手机号码：</label>
+                        <p>
+                        	<strong class="fc_o f16">18987989888</strong>
+                            <input class="btn_h23 bg_c_o ml20" type="button" value="获取验证码" />
+                            <a class="ml25 fc_b fm_s" href="#">更换手机号码</a>
+                        </p>
+                    </li>
+                    <li>
+                    	<label>输入验证码：</label>
+                        <p>
+                        	<input class="text_h30 w106" maxlength="11"  type="text" value="" />
+                            <em>（验证码以短信方式发送到您手机，请查收。）</em>
+                        </p>
+                    </li>
+                   	
+                    <li class="pb50 mt50">
+                    	<label>&nbsp;</label>
+                        <p>
+                        	<input class="btn_124_o" type="submit" value="立即激活" />
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- box_registerBody end -->
+        </div>
+    </div>
+    <!-- content end -->
+    
+    <!-- footer start -->
+	<div id="footer" class="w mt20">
+        <div class="pc">
+        	<p class="tc f_link pt20">
+                <a href="用户中心-关于我们.html">关于我们</a>|
+                <a href="用户中心-网站地图.html">网站地图</a>|
+              	<a href="用户中心-合作伙伴.html">合作伙伴</a>|
+                <a href="用户中心-法律声明.html">法律声明</a>|
+                <a href="用户中心-联系我们.html">联系我们</a>
+            </p>
+            <p class="tc">
+            	黑龙江省科技创新创业共享服务平台 2014&nbsp;&nbsp;&nbsp;&nbsp;服务热线： 8009-170-114&nbsp;&nbsp;/&nbsp;&nbsp;4008-970-114 <span class="ml15">黑ICP备047814858</span>
+            </p>
+            <p class="tc f_link_img mt5">
+                <a href="#">
+                    <img src="../images/i_police.png" alt="police" />
+                </a>
+           
+                <a href="#">
+                    <img src="../images/i_emblem.png" alt="emblem" />
+                </a>
+           
+                <a href="#">
+                    <img src="../images/i_credibleWeb.png" alt="_credibleWeb" />
+                </a>
+                <a href="#">
+                    <img src="../images/i_recordWeb.png" alt="recordWeb" />
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- footer end -->
+    <script src="../js/jquery-1.9.1.js"></script>
+    <script src="../js/base.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(e) {
+           	$(".ls_register input[type='password']").bind({
+			   blur:function(){
+				   	//如果输入不符合要求
+					if($(this).val().length == 0){
+						var $em = $(this).next("em");
+						$(this).addClass("error");	
+						$em.removeClass("correct").addClass("error").text("（密码长度6-16位，区分大小写。）");
+					}else{
+						//输入符合要求	
+						var $em = $(this).next("em");
+						$(this).removeClass("error");
+						$em.removeClass("error").addClass("correct").text("输入正确！");
+					}
+				}
+			}); 
+			
+			$(".ls_register input[type='text']").bind({
+				blur:function(){
+						//如果输入不符合要求
+					if($(this).val().length == 0){
+						var $em = $(this).next("em");
+						$(this).addClass("error");	
+						$em.removeClass("correct").addClass("error").text("手机号码输入错误，请重新输入！");
+					}else{
+						//输入符合要求	
+						var $em = $(this).next("em");
+						$(this).removeClass("error");
+						$em.removeClass("error").addClass("correct").text("输入正确！");
+					}
+				}	
+			});
+			
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document for 开通权限 mxk*/
+/*jurisdiction start*/
+.ls_borBox li{ margin-top:29px; height:52px; line-height:52px; border:1px solid #dbdbc8; background:#fff;}
+.ls_borBox li img{ float:left; margin-left:11px; width:27px; height:52px; opacity:0.5; filter:alpha(opacity:50);}
+.ls_borBox li strong{ *float:left; margin-left:18px; color:#bcbcbc; font-size:16px;}
+.ls_borBox li a{width:135px; height:52px; line-height:52px; text-indent:55px; color:#bcbcbc; background:url(../images/main.png) -26px -180px no-repeat; font-size:14px;}
+.ls_borBox li a:hover{text-decoration:none;}
+.ls_borBox li.hover{ border:1px solid #0097cf;}
+.ls_borBox li.pass strong,
+.ls_borBox li.audit strong,
+.ls_borBox li.noPass strong,
+.ls_borBox li.hover strong{ color:#454849;}
+.ls_borBox li.hover a{ background:#0097cf; color:#fff; text-indent:35px; text-decoration:none; font-size:16px;}
+.ls_borBox li.pass img,
+.ls_borBox li.audit img,
+.ls_borBox li.noPass img,
+.ls_borBox li.hover img{ opacity:1; filter:alpha(opacity:100);}
+.ls_borBox li.pass{ border:1px solid #5fc04f;}
+.ls_borBox li.pass a{ background-position:-26px -232px; color:#fff;}
+.ls_borBox li.audit{ border:1px solid #e7803c;}
+.ls_borBox li.audit a{ background-position:-26px -284px; color:#fff;}
+.ls_borBox li.noPass{ border:1px solid #ed4747;}
+.ls_borBox li.noPass a{ background-position:-26px -336px; color:#fff;}
+/*jurisdiction end*/
+

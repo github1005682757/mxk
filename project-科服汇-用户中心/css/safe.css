@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document for 安全中心 mxk */
+/* safe start*/
+.safe_plan{line-height:49px; background:#fff;}
+.safe_plan .data_plan{ margin-top:18px; width:125px;}
+.ls_borBox_02{ border-top:none;}
+.ls_borBox_02 li{ padding:24px 0 20px 0; height:39px; line-height:39px; background:#fff; border-top:1px solid #dbdbdb;}
+.ls_borBox_02 li *{ float:left;}
+.ls_borBox_02 li .b{margin-left:11px; width:32px; }
+.ls_borBox_02 li strong{margin-left:9px; font-size:16px; color:#454849;}
+.ls_borBox_02 li .s{margin:6px 0 0 2px;}
+.ls_borBox_02 li span{ margin:5px 0 0 8px; padding-left:8px; height:28px; line-height:28px; color:#929292; font-family:"宋体"; border-left:1px solid #dbdbdb;}
+.ls_borBox_02 li a{float:right;  margin:9px 12px 0 0; width:56px; height:21px; line-height:21px; color:#fff; text-align:center;}
+.ls_borBox_02 li a:hover{ text-decoration:none;}
+.ls_box_01{background:#fff;}
+.ls_box_01 h2{ height:30px; line-height:30px; text-indent:12px; font-size:14px; color:#454849; border-bottom:1px solid #dbdbdb;}
+.ls_box_01 ul{ padding:7px 13px 20px 13px;}
+.ls_box_01 ul li{ line-height:24px; color:#454849;}
+.ls_box_01 ul li a{ color:#008abd;}
+/* safe end*/
+

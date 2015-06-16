@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document for 注册 mxk */
+/*register start*/
+.box_registerMap{ background:#f6f5f5; border-bottom:1px solid #e8e8e8;}
+.box_registerMap ul li{position:relative; z-index:1; height:35px; line-height:35px; background:url(../images/arrow.png) right -35px no-repeat;}
+.box_registerMap ul li.first{ z-index:3;}
+.box_registerMap ul li.second{ z-index:2; margin-left:-12px;}
+.box_registerMap ul li.third{ z-index:1; margin-left:-12px;}
+.box_registerMap ul li b{ margin-left:70px; display:inline-block; width:19px; height:18px; line-height:19px; background:url(../images/circle.png) 1px -18px no-repeat; text-align:center; vertical-align:middle; color:#fff;}
+.box_registerMap ul li span{margin-left:7px; font-size:16px;}
+.box_registerMap ul li.on{ background-position:right 0;}
+.box_registerMap ul li.on b{ background-position:1px 0; color:#0097cf;}
+.box_registerMap ul li.on span{color:#fff;}
+/*register end*/
+/*box_registerBody start*/
+.box_registerBody{padding:25px 63px 25px 53px; background:#fff;}
+.ls_register li { margin-top:14px;}
+.ls_register li label{float:left; width:91px; padding-right:17px; text-align:right; font-size:14px; color:#5d5d5d;}
+.ls_register li label i{padding-right:5px; font-weight:bold; font-size:14px; font-style:normal;}
+.ls_register li p{float:left;}
+.ls_register li p *{vertical-align:middle;}
+.ls_register li em{margin-left:10px; display:inline-block; color:#afafaf; font-family:"宋体";}
+/*box_registerBody end*/
+
