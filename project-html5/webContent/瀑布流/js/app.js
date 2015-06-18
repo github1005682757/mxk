@@ -1,8 +1,25 @@
 window.onload = function(){
-	imgLocation("container", "box")
+	imgLocation("container", "box");
+	
+	window.onscroll = function(){
+		checkFlag();
+	}
 };
 
+function checkFlag(){
+	var oParent = document.getElementById("container");
+	var aChild = getChildElement(oParent, "box");
+	var iLastHeight = aChild[aChild.length - 1].offsetHeight;
+	var iScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+	var iParentHeight = document.documentElement.clientHeight || document.body.clientHeight;
+	console.log(iLastHeight + ":" + iScrollTop + ":" + iParentHeight);
+}
 
+/**
+ * 
+ * @param {Object} sParentId
+ * @param {Object} sChildClassName
+ */
 function imgLocation(sParentId, sChildClassName){
 	//将parent下多有的content全部取出
 	var oParent = document.getElementById(sParentId);
