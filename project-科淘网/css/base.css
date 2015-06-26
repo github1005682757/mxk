@@ -548,7 +548,7 @@ a:hover { color: #c00; text-decoration:none; }
 
 /* public css*/
 #nav{background: #c00;}
-#nav li.nav-l{height:80px; border-right:1px solid #8f191b; border-left:1px solid #f44a4d; }
+#nav li.nav-l{ display:inline-block; height:80px; border-right:1px solid #8f191b; border-left:1px solid #f44a4d; }
 #nav li.nav-l.selected,
 #nav li.nav-l:hover{ background:#a70000;}
 #nav .nav-b{ float:left; margin-top:25px; height: 34px; line-height:30px; color:#fff; font-size:20px; padding:0 0 0 42px;text-decoration: none; background: url(../images/icon-nav.png) 13px -3px no-repeat;}
