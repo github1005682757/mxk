@@ -280,23 +280,6 @@ GLOBAL.Method.stopPropagation = function (e) {
 //表单校验
 GLOBAL.Verify = GLOBAL.Verify || {};
 
-//空格校验
-GLOBAL.Verify.hasSpace = function (str) {
-    var flag = false;
-    for (var i = 0, iLen = str.length; i < iLen; i++) {
-        if (str[i] == " ") {
-            flag = true;
-            break;
-        }
-    }
-    return flag;
-};
-//只能输入大写字母
-GLOBAL.Verify.upperCase = function (str) {
-    var regExp = /^[A-Z]+$/g;
-    return str.test(regExp);
-};
-
 Function.prototype.method = function (name, func) {
     this.prototype[name] = func;
     return this;
@@ -305,6 +288,24 @@ Function.prototype.method = function (name, func) {
 //去掉空白字符
 String.method("trim", function () {
     return this.replace(/^\ + |\s+$/g, "");
+});
+
+//检测字符串中是否存在中文
+String.method("hasChinese", function () {
+    var regExp = new RegExp("[\u4e00-\u9fa5]");
+    return regExp.test(this);
+});
+
+//检测字符串是大写字母
+String.method("isUpperCase", function () {
+    var regExp = /^[A-Z]+$/g;
+    return regExp.test(this);
+});
+
+//检测字符串中含有空格
+String.method("hasSpace", function () {
+    var regExp = /\s/;
+    return regExp.test(this);
 });
 
 //加法
