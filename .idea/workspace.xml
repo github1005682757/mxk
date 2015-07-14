@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c0e05400-512d-4932-88ea-bc71243615a4" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-jQuery/View/datatables-javascript数据源.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-jQuery/View/jquery-templates.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-jQuery/js/jquery.tmpl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -59,8 +58,8 @@
       <file leaf-file-name="jquery-templates.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project-jQuery/View/jquery-templates.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37894738">
-              <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.8210526">
+              <caret line="47" column="48" selection-start-line="37" selection-start-column="12" selection-end-line="47" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -941,8 +940,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project-jQuery/View/jquery-templates.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37894738">
-          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.8210526">
+          <caret line="47" column="48" selection-start-line="37" selection-start-column="12" selection-end-line="47" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
