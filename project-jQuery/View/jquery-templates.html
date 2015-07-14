@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.tmpl.js"></script>
+    <script type="text/x-jquery-tmpl" id="tmplItem">
+        <tr><td>${No}</td><td>${Name}</td><td>${Score}</td></tr>
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            var data = [
+                {
+                    person:{
+                        name:"mxk",
+                        age:24,
+                        gender:"男"
+                    },
+                    asset:{
+                        value:10000000,
+                        type:"RMB"
+                    }
+                },
+                {
+                    person:{
+                        name:"ly",
+                        age:22,
+                        gender:"男"
+                    },
+                    asset:{
+                        value:10000000,
+                        type:"RMB"
+                    }
+                }
+            ];
+            //傳入data為Array時，傳回結果是個集合
+            $("#tmplItem").tmpl(data).each(function () {
+                alert(this.innerHTML);
+            });
+            //將結果附加到DOM顯示出來
+            $("#tmplItem").tmpl(data).appendTo("#tb");
+            //不另外宣告<script>區塊放樣版，直接內嵌範本HTML也是可行的
+            //但由於內嵌HTML的.html()才算真正範本的部分，所以外面要加一個容器
+            //一般<li> <span> <div>，外曾層再用一個<div>或<span>包起來就可以
+            //本例中因為是<tr>，要用<tbody>才算嚴謹，再不然用<script>包夾也可以
+            $("<tbody><tr><td colspan='3'>${person.name},${asset.value} => ${asset.type}</td></tr></tbody>")
+                    .tmpl(data).appendTo("#tb");
+            //或者，我們也可以將範本HTML藏在網頁中，一樣用selector去找到它，
+            //但是必須用display:none或其他方法藏起來
+            //相較之下，我認為還是<script type="text/x-jquery-template">最方便
+            $("#hiddenTemplateDOM").tmpl(data).appendTo("#tb");
+        });
+    </script>
+</head>
+<body>
+ 
+<!-- 資料套用範本後，附加到<tbody id="tb">顯示出來 -->
+<table>
+    <tbody id="tb"></tbody>
+</table>
+ 
+<!-- 以下示範Template藏在網頁內部 -->
+<table style="display:none">
+    <tbody id="hiddenTemplateDOM">
+    <tr style="background-color:#cccccc">
+        <td>${person.name}</td>
+        <td colspan="2">${person.age} - ${person.gender}</td>
+    </tr>
+    </tbody>
+</table>
+ 
+</body>
+</html>
