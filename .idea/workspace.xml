@@ -2,11 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0e05400-512d-4932-88ea-bc71243615a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-requirejs/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-interview/webContent/layout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-requirejs/js/require.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-requirejs/requireJs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-angular/js/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-angular/js/controllers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-angular/view/hello.html" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\.bowerrc" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\README.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\angular.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\angular.min .js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\angular .js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\angular.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\angular.min .js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\app.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\app.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\components\version\interpolate-filter.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\components\version\interpolate-filter_test.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\components\version\version-directive.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\components\version\version-directive_test.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\components\version\version.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\components\version\version_test.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\controllers.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\hello.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\index-async.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\view1\view1.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\view1\view1.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\view1\view1_test.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\view2\view2.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\view2\view2.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\view2\view2_test.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\e2e-tests\protractor.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\e2e-tests\scenarios.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\package.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mxk.iws" />
@@ -28,139 +61,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hello.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project-angular/app/hello.html">
+      <file leaf-file-name="hello.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project-angular/view/hello.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+            <state vertical-scroll-proportion="0.33221477">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datatables.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project-jQuery/View/datatables.html">
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project-angular/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datatables-javascript数据源.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project-jQuery/View/datatables-javascript数据源.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-templates.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project-jQuery/View/jquery-templates.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="48" selection-start-line="37" selection-start-column="12" selection-end-line="47" selection-end-column="48" />
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="24" />
               <folding>
-                <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#!!doc;n#HelloController#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="28" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="require.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project-requirejs/js/require.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project-requirejs/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#42#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modalwindow.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project-ui/custom/webContent/modalwindow.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.75">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project-interview/webContent/layout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15335463">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requireJs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project-requirejs/requireJs.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angular .js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project-angular/app/angular .js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="156" column="440" selection-start-line="156" selection-start-column="440" selection-end-line="156" selection-end-column="440" />
-              <folding>
-                <marker date="1436876976700" expanded="true" signature="0:2" placeholder="/** @license AngularJS v1.2.1 ...*/" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angular.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project-angular/angular.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angular.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project-angular/app/angular.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -171,8 +89,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Html5" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -188,9 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/project-龙转网/webContent/龙转网列表.html" />
-        <option value="$PROJECT_DIR$/project-龙转网/webContent/龙转网详细.html" />
-        <option value="$PROJECT_DIR$/project-设计模式/第4章继承/extend.js" />
         <option value="$PROJECT_DIR$/project-设计模式/第4章继承/EditInPlaceField.js" />
         <option value="$PROJECT_DIR$/project-设计模式/第4章继承/EditInPlaceArea.js" />
         <option value="$PROJECT_DIR$/project-模板/demo1/webContent/Dashboard  Cascade Flat , Responsive Bootstrap 3_0 Admin Template.htm" />
@@ -226,7 +141,6 @@
         <option value="$PROJECT_DIR$/project-科淘网/webContent/科淘网-科技资源-创新需求.html" />
         <option value="$PROJECT_DIR$/project-科淘网/webContent/科淘网-科技资源-科技人才.html" />
         <option value="$PROJECT_DIR$/project-angular/app/angular .js" />
-        <option value="$PROJECT_DIR$/project-angular/app/hello.html" />
         <option value="$PROJECT_DIR$/project-jQuery/js/jquery-1.11.1.min.js" />
         <option value="$PROJECT_DIR$/project-jQuery/js/jquery.dataTables.min.js" />
         <option value="$PROJECT_DIR$/project-jQuery/css/jquery.dataTables.css" />
@@ -239,6 +153,10 @@
         <option value="$PROJECT_DIR$/project-requirejs/requireJs.html" />
         <option value="$PROJECT_DIR$/project-requirejs/js/app.js" />
         <option value="$PROJECT_DIR$/project-interview/webContent/layout.html" />
+        <option value="$PROJECT_DIR$/project-angular/app/controllers.js" />
+        <option value="$PROJECT_DIR$/project-angular/app/hello.html" />
+        <option value="$PROJECT_DIR$/project-angular/js/controllers.js" />
+        <option value="$PROJECT_DIR$/project-angular/view/hello.html" />
       </list>
     </option>
   </component>
@@ -250,10 +168,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="width" value="1382" />
+    <option name="height" value="753" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -316,6 +234,9 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Changed Files" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -344,11 +265,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="project-interview" />
+              <option name="myItemId" value="project-angular" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webContent" />
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -362,19 +283,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="project-interview" />
+              <option name="myItemId" value="project-angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Changed Files" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/Program Files (x86)/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
@@ -416,11 +338,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mengxk\Documents\GitHub\mxk\project-angular\js" />
+      <recent name="D:\mengxk\Documents\GitHub\mxk\project-angular" />
       <recent name="D:\mengxk\Documents\GitHub\mxk\project-requirejs\js" />
       <recent name="D:\mengxk\Documents\GitHub\mxk\project-angular\app" />
-      <recent name="D:\mengxk\Documents\GitHub\mxk\project-angular" />
       <recent name="G:\workSpace\mxk\project-科淘网\images" />
-      <recent name="G:\workSpace\mxk" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\workSpace\mxk\project-模板\demo1\resource\js\CSS3" />
@@ -554,30 +476,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="753" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24791667" sideWeight="0.7678019" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24231333" sideWeight="0.7678019" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46548957" sideWeight="0.50037175" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.256" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.264" sideWeight="0.49962825" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21803127" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28330892" sideWeight="0.23219815" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3529412" sideWeight="0.49962825" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.264" sideWeight="0.49962825" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.49962825" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16383308" sideWeight="0.49962825" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23434344" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3529412" sideWeight="0.49962825" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -624,27 +546,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project-ui/jquery-easyui-1.4.2/demo/dialog/basic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project-设计模式/第4章继承/augment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project-设计模式/第4章继承/clone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="19" selection-start-line="4" selection-start-column="3" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project-设计模式/第4章继承/extend.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -848,32 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project-angular/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project-angular/app/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project-angular/app/angular .js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="156" column="440" selection-start-line="156" selection-start-column="440" selection-end-line="156" selection-end-column="440" />
-          <folding>
-            <marker date="1436876976700" expanded="true" signature="0:2" placeholder="/** @license AngularJS v1.2.1 ...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project-jQuery/js/jquery-1.11.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11594203">
@@ -885,14 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.115942">
           <caret line="162" column="229" selection-start-line="162" selection-start-column="229" selection-end-line="162" selection-end-column="229" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project-angular/app/hello.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -945,8 +812,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="48" selection-start-line="37" selection-start-column="12" selection-end-line="47" selection-end-column="48" />
           <folding>
-            <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -967,14 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project-requirejs/requireJs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project-requirejs/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -987,7 +846,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project-ui/custom/webContent/modalwindow.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.75">
+        <state vertical-scroll-proportion="0.0">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding />
         </state>
@@ -995,8 +854,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project-interview/webContent/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15335463">
+        <state vertical-scroll-proportion="-6.0">
           <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project-requirejs/requireJs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24161074">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project-angular/js/angular.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project-angular/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc;n#HelloController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project-angular/view/hello.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33221477">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding />
         </state>
       </provider>
