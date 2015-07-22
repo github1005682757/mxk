@@ -2,44 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0e05400-512d-4932-88ea-bc71243615a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-angular/js/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-angular/js/controllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-angular/view/hello.html" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\.bowerrc" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\README.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\angular.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\angular.min .js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\angular .js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\angular.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\angular.min .js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\app.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\app.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\components\version\interpolate-filter.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\components\version\interpolate-filter_test.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\components\version\version-directive.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\components\version\version-directive_test.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\components\version\version.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\components\version\version_test.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\controllers.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\hello.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\index-async.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\view1\view1.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\view1\view1.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\view1\view1_test.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\view2\view2.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\view2\view2.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\app\view2\view2_test.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\e2e-tests\protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\e2e-tests\scenarios.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\mengxk\Documents\GitHub\mxk\project-angular\package.json" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-jQuery/js/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-jQuery/View/jquery-validate/js-validate.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mxk.iws" />
@@ -61,11 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hello.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hello.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project-angular/view/hello.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33221477">
+            <state vertical-scroll-proportion="-8.25">
               <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js-validate.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project-jQuery/View/jquery-validate/js-validate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.90604025">
+              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -89,8 +63,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Html5" />
         <option value="JavaScript File" />
+        <option value="Html5" />
       </list>
     </option>
   </component>
@@ -106,9 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/project-设计模式/第4章继承/EditInPlaceField.js" />
-        <option value="$PROJECT_DIR$/project-设计模式/第4章继承/EditInPlaceArea.js" />
-        <option value="$PROJECT_DIR$/project-模板/demo1/webContent/Dashboard  Cascade Flat , Responsive Bootstrap 3_0 Admin Template.htm" />
         <option value="$PROJECT_DIR$/project-模板/webContent/index.html" />
         <option value="$PROJECT_DIR$/project-ui/bootstrap-3.3.4/dist/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/project-妙味课堂练习/CSS3/自定义字体/字体.html" />
@@ -157,6 +128,9 @@
         <option value="$PROJECT_DIR$/project-angular/app/hello.html" />
         <option value="$PROJECT_DIR$/project-angular/js/controllers.js" />
         <option value="$PROJECT_DIR$/project-angular/view/hello.html" />
+        <option value="$PROJECT_DIR$/project-jQuery/View/jquery-validation.html" />
+        <option value="$PROJECT_DIR$/project-jQuery/View/validation/jquery-validation.html" />
+        <option value="$PROJECT_DIR$/project-jQuery/View/jquery-validate/js-validate.html" />
       </list>
     </option>
   </component>
@@ -265,11 +239,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="project-angular" />
+              <option name="myItemId" value="project-jQuery" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
+              <option name="myItemId" value="View" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -283,11 +257,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="project-angular" />
+              <option name="myItemId" value="project-jQuery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-validate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mxk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mxk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-jQuery" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mxk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mxk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-jQuery" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,18 +348,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mengxk\Documents\GitHub\mxk\project-jQuery\js" />
       <recent name="D:\mengxk\Documents\GitHub\mxk\project-angular\js" />
       <recent name="D:\mengxk\Documents\GitHub\mxk\project-angular" />
       <recent name="D:\mengxk\Documents\GitHub\mxk\project-requirejs\js" />
       <recent name="D:\mengxk\Documents\GitHub\mxk\project-angular\app" />
-      <recent name="G:\workSpace\mxk\project-科淘网\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\mengxk\Documents\GitHub\mxk\project-jQuery\View\validation" />
       <recent name="G:\workSpace\mxk\project-模板\demo1\resource\js\CSS3" />
       <recent name="G:\workSpace\mxk\project-模板\demo1" />
       <recent name="G:\workSpace\mxk\project-模板\demo1\resource" />
       <recent name="G:\workSpace\mxk\project-科淘网\images\bg" />
-      <recent name="G:\workSpace\mxk\project-ui\custom\webContent\button\images" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js (1)">
@@ -886,10 +896,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project-jQuery/js/jquery.validate.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project-angular/view/hello.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33221477">
+        <state vertical-scroll-proportion="-8.25">
           <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project-jQuery/View/jquery-validate/js-validate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.90604025">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
           <folding />
         </state>
       </provider>
