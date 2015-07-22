@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="../js/angular.min.js"></script>
+    <script type="text/javascript" src="../js/angular.min.js"></script>
+</head>
+<body>
+    <input type="number" ng-model="qty" required />
+    *
+    <input type="number" ng-model="cost" required />
+    =
+    <label>和</label>{{qty * cost | currency}}
+</body>
+</html>
