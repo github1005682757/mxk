@@ -23,9 +23,10 @@ angular.module("app", [])
         };
         $scope.login = function(){
             if($scope.user.uname == "admin" && $scope.user.pwd == "123"){
-                alert("登录成功");
+                $scope.errormsg = "";
+                alert("鐧诲綍鎴愬姛");
             }else{
-                $scope.errormsg = "用户名或密码错误";
+                $scope.errormsg = "鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒";
             }
         };
     });
