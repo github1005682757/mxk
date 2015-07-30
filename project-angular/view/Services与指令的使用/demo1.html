@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>自定义Service服务</li>
+			<li>Service的应用</li>
+			<li>常用指令的使用</li>
+			<li>常用指令ng-repeat的使用</li>
+		</ul>
+		<div ng-app="app">
+			<div ng-controller="MyCtrl">
+				<h1>{{msg}}</h1>
+				<h1>{{realname}}</h1>
+				<h1>{{http}}</h1>
+				<h1>{{data.name}}</h1>
+				<h1>{{user.getName()}}</h1>
+			</div>
+		</div>
+		<script src="../../js/angular.min.js"></script>
+		<script>
+			var app = angular.module("app", []);
+			app.value("realname", "zhaoliu");
+			app.value("realname", "wangwu");	//value是可以改变的
+			app.constant("http", "http://www.baidu.com");
+			app.constant("http", "http://www.souhu.com");	//constant是不可以改变的
+			app.factory("Data", function(){
+				return {
+					name: "张三",
+					age: 12,
+					setName: function(name){
+						this.name = name;
+					},
+					getName: function(){
+						return this.name;
+					}
+				};
+			});
+			app.service("User", function(){
+				this.firstName = "西门";
+				this.lastName = "吹雪";
+				this.getName = function(){
+					return this.firstName + this.lastName;
+				}
+			});
+			app.controller("MyCtrl", function($scope, realname, http, Data, User){
+				$scope.msg = "您好";
+				$scope.realname = realname;
+				$scope.http = http;
+				$scope.data = Data;
+				Data.setName("李四");
+				$scope.user = User;
+			});
+		</script>
+	</body>
+</html>

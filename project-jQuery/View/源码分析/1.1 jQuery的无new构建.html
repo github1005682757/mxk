@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			(function(){
+				var aQuery = function(selector, context){
+					//构建函数
+				};
+				aQuery.prototype = {
+					//原型
+					name: function(){},
+					age: function(){}
+				};
+				var a = new aQuery();
+				a.name();
+			})();
+			//////////////////////////////////////////////////////////////////////////////////////////
+			(function(){
+				var aQuery = function(selector, context){
+					return new aQuery();
+				};
+				aQuery.prototype = {
+					name: function(){},
+					age: function(){}
+				};
+			})();
+			//////////////////////////////////////////////////////////////////////////////////////////
+			(function(){
+				var aQuery = function(selector, context){
+					return aQuery.prototype.init();
+				};
+				aQuery.prototype = {
+					init: function(){
+						return this;
+					},
+					name: function(){},
+					age: function(){}
+				};
+			})();
+			//////////////////////////////////////////////////////////////////////////////////////////
+			(function(){
+		 		var aQuery = function(selector, context){
+		 			return aQuery.prototype.inti();
+		 		};
+		 		aQuery.prototype = function(){
+		 			init: function(){
+		 				this.age = 10;
+		 				return this;
+		 			},
+		 			name: function(){},
+		 			age: 20
+		 		};
+		 		consoole.log(aQuery().age);
+			})();
+			
+		</script>
+	</body>
+</html>
