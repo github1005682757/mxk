@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>在多个controller中共享数据</title>
+	</head>
+	<body>
+		<div ng-app="app">
+			<div ng-controller="FCtrl">
+				<input type="text" ng-model="data.msg" />
+				<h2>{{data.msg}}</h2>
+			</div>
+			<div ng-controller="SCtrl">
+				<input type="text" ng-model="data.msg" />
+				<h2>{{data.msg}}</h2>
+			</div>
+		</div>
+		<script src="../../js/angular.min.js"></script>
+		<script>
+			var app = angular.module("app", []);
+			app.factory("Data", function(){
+				return {
+					msg: "我来自factory"
+				};
+			});
+			app.controller("FCtrl", function($scope, Data){
+				$scope.data = Data;
+			});
+			app.controller("SCtrl", function($scope, Data){
+				$scope.data = Data;
+			});
+		</script>
+	</body>
+</html>
