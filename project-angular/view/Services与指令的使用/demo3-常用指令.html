@@ -11,7 +11,7 @@
 	<body>
 		<div ng-app="app">
 			<div ng-controller="UserCtrl">
-				<form action="">
+				<form name="f" action="" ng-submit="register(user)">
 					<fieldset id="">
 						<legend>基本信息</legend>
 						<img ng-class="{'tx':user.showIcon}" 
@@ -22,7 +22,7 @@
 						</div>
 						<div>
 							职位：
-							<select name="" id="">
+							<select ng-disabled="1==1">
 								<option value="">--请选择--</option>
 								<option ng-selected="user.zw=='1'" value="1">JAVA工程师</option>
 								<option ng-selected="user.zw=='2'" value="2">.NET工程师</option>
@@ -33,6 +33,15 @@
 							<input type="radio" ng-checked="user.sex=='1'" name="sex" />男
 							<input type="radio" ng-checked="user.sex=='0'" name="sex" />女
 						</div>
+						<fieldset>
+							<legend>爱好</legend>
+							<div>
+								<input type="checkbox" ng-checked="isChecked(1)" />篮球
+								<input type="checkbox" ng-checked="isChecked(2)" />足球
+								<input type="checkbox" ng-checked="isChecked(3)" />排球
+							</div>
+						</fieldset>
+						<input type="submit" ng-disabled="f.$invalid" />
 					</fieldset>
 				</form>
 			</div>
@@ -55,7 +64,22 @@
 					aihao: "",
 					icon:"../../images/Koala.jpg",
 					showIcon:true,
-					isShowImg:true
+					isShowImg:true,
+					aihao: [1,2,3]
+				};
+				$scope.isChecked = function(n){
+					var isok = false;
+					for(var i = 0; i < $scope.user.aihao.length; i++){
+						if( n == $scope.user.aihao[i]){
+							isok = true;
+							break;
+						}
+					}
+					return isok;
+				};
+				$scope.register = function(u){
+					console.log(u);
+					return false;
 				};
 			});
 		</script>
