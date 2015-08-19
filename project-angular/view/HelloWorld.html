@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app>
+    <head>
+        <script src="../js/angular.min.js"></script>
+        <script src="../js/json3.min.js"></script>
+   <!--[if lte IE 8]>
+     <script>
+        document.createElement('ng-include');
+        document.createElement('ng-pluralize');
+        document.createElement('ng-view');
+        // Optionally these for CSS
+       document.createElement('ng:include');
+       document.createElement('ng:pluralize');
+       document.createElement('ng:view');
+      </script>
+   <![endif]-->
+ </head>
+    <body>
+        Hello {{'World'}}!
+        <mytag>some text</mytag>
+    </body>
+</html>

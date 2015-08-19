@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:ng="http://angularjs.org">
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<!--[if lte IE 8]>
+	     <script>
+	        document.createElement('ng-include');
+	        document.createElement('ng-pluralize');
+	        document.createElement('ng-view');
+	        // Optionally these for CSS
+	       document.createElement('ng:include');
+	       document.createElement('ng:pluralize');
+	       document.createElement('ng:view');
+	      </script>
+	   <![endif]-->
 	</head>
 	<body ng-app="app">
 		<ul ng-controller="AddressCtrl">
 			<li ng-repeat="a in list" ng-class="{'selected':$first}">
 				<h2 ng-if="!$last">{{$index + a.address}}</h2>
+				<div ng-repeat="user in a.user">
+					{{user.name}}
+				</div>
 			</li>
 		</ul>
 		<script src="../../js/angular.min.js"></script>
-		<script>
+		<script type="text/javascript">
 			angular.module("app", [])
 			.controller("AddressCtrl", function($scope){
 				$scope.list = [
@@ -31,6 +45,17 @@
 						id:4,
 						address: "莲花路9栋"
 					}
+				];
+				$scope.list[0].user = [
+					{
+						name:"张三"
+					},
+					{
+						name:"李四"
+					},
+					{
+						name:"王五"
+					},
 				];
 			});
 		</script>
