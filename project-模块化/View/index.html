@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../Content/css/bootstrap.min.css" />
+	</head>
+	<body>
+		<h1>模块化概念解读</h1>
+		<h2>AMD是RequireJS在推广过程中对模块定义的规范化产出。</h2>
+		<ul>
+			<li>异步加载模块，依赖前置，提前执行</li>
+			<li>Define定义模块<b>define(['require','foo', function(){ return}]);</b></li>
+			<li>Require加载模块（依赖前置）<b>require(['foo', 'bar'], function(foo, bar){});</b></li>
+		</ul>
+		<h2>CMD是SeaJS在推广过程中对模块化定义的规范化产出。</h2>
+		<ul>
+			<li>Define定义exports导出define(function(require, exports, module){});module上存储了当前木块的一些对象。</li>
+			<li>require(./a)直接引入。Require.async异步引入。</li>
+			<li>同步加载，依赖就近，延迟知行。</li>
+		</ul>
+		<h2>类似的还有CommonJS Modules/2.0规范。</h2>
+	</body>
+</html>
