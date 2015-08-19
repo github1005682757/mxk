@@ -41,20 +41,41 @@
 					age: function(){}
 				};
 			})();
-			//////////////////////////////////////////////////////////////////////////////////////////
+			
+			/*
+			 * 返回一个正确的实例
+			 */
 			(function(){
 		 		var aQuery = function(selector, context){
-		 			return aQuery.prototype.inti();
+		 			return aQuery.prototype.init();
 		 		};
-		 		aQuery.prototype = function(){
+		 		aQuery.prototype = {
 		 			init: function(){
-		 				this.age = 10;
 		 				return this;
 		 			},
 		 			name: function(){},
-		 			age: 20
+		 			age: function(){}
 		 		};
-		 		consoole.log(aQuery().age);
+		 		console.log(aQuery());
+			})();
+			
+			/*
+			 * jQuery框架分隔作用域的处理
+			 */
+			(function(){
+				var aQuery = function(selector, context){
+					return aQuery.prototype.init();
+				};
+				aQuery.prototype = {
+					init: function(){
+						this.age = 18;
+						return this;
+					},
+					name: function(){},
+					age: 20
+				};
+				console.log(aQuery().age);	//18
+				//对象自身属性的优先级比原型属性要高
 			})();
 			
 		</script>
