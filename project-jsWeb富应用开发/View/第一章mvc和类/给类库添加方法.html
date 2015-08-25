@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var _Class = function(){
+				var klass = function(){
+					this.init.apply(this, arguments);
+				};
+				klass.fn = klass.prototype;
+				klass.fn.init = function(){};
+				//定义类的别名
+				klass.fn.parent = klass;
+				//给类添加属性
+				klass.extend = function(obj){
+					var extended = obj.extended;
+					for(var i in obj){
+						klass[i] = obj[i];
+					}
+					if(extended)
+						extended(klass);
+				};
+				//给实例添加属性
+				klass.include = function(obj){
+					var included = obj.included;
+					for(var i in obj){
+						klass.fn[i] = obj[i];
+					}
+					if(included)
+						included(klass);
+				};
+				return klass;
+			};
+			
+			var Person = new _Class();
+			Person.extend({
+				find: function(id){
+					return id;
+				},
+				exists: function(id){
+					return "存在" + id;
+				}
+			});
+			//alert(Person.find(1));
+			Person.include({
+				save: function(id){
+					return "保存：" + id;
+				},
+				destory: function(id){
+					return "销毁：" + id;
+				}
+			});
+			
+			Person.extend({
+				extended: function(klass){
+					console.log(klass, " was extended!");
+				}
+			});
+			var ORMModule = {
+				save: function(){
+					console.log("共享函数");
+				}
+			};
+			
+			Person.include(ORMModule);
+			Person.fn.init = function(name){
+				this.name = name;
+			};
+			debugger;
+			var person = new Person("小明");
+			var Asset = new _Class();
+			Asset.include(ORMModule);
+			//console.log(person.save(1));
+			//person.save();
+			console.log(person.name);
+		</script>
+	</body>
+</html>
