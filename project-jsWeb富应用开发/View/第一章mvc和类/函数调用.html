@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../../js/jquery-1.8.3.js"></script>
+	</head>
+	<body>
+		<script>
+			var clicky = {
+				wasClicked: function(){
+					console.log("wasClicked");
+				},
+				addListeners: function(){
+					var self = this;
+					window.onload = function(){
+						self.wasClicked();
+					};
+				}
+			};
+			//clicky.addListeners();
+			
+			///////////////////////////////////////////////
+			var proxy = function(func, thisObject){
+				return (function(){
+					return func.apply(thisObject, arguments);
+				})();
+			};
+			var clickx = {
+				wasClicked: function(){
+					console.log("wasClicked");
+				},
+				addListeners: function(){
+					var self = this;
+					window.onload = function(){
+						proxy(self.wasClicked, self);
+					};
+				}
+			};
+			//clickx.addListeners();
+			/////////////////////////////////////////////////////
+			var App = {
+				log: function(){
+					if(typeof console == "undefined")
+						return;
+					//将参数转换为合适的数组
+					var args = jQuery.makeArray(arguments);
+					//插入一个新的参数
+					args.unshift("(APP)");
+					//委托给console
+					console.log.apply(console, args);
+				}
+			};
+			App.log(1, 2, 3);
+		</script>
+	</body>
+</html>
