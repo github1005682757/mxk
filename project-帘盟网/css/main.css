@@ -33,12 +33,17 @@ a:hover { text-decoration: underline; }
 .ml17{ margin-left:17px;}
 .ml21{ margin-left:21px;}
 
+.pt12{padding-top:12px;}
+
 .color-fff{ color:#fff;}
 .color-666{ color:#666;}
 .color-716{ color:#716250;}
 .color-886{ color:#886641!important;}
 .color-f60{ color:#f60;}
 .color-f90{ color:#f90;}
+.color-A48{color:#A4835B;}
+.color-000{color:#000;}
+.color-693{color:#693;}
 
 .size-14{ font-size:14px;}
 .size-15{ font-size:15px;}
@@ -54,18 +59,21 @@ a:hover { text-decoration: underline; }
 .bg-f90{background:#f90;}
 
 .bor-cdb{border:1px solid #cdbfab;}
+.bor-f2f{border:1px solid #f2f2f2;}
 
 .w170{width:170px;}
 .w270{width:270px;}
 .w742{width:742px;}
 
 /*common*/
+table{ width:100%;}
 .fl{ float:left!important; display:inline;}
 .fr{ float:right!important; display:inline;}
 .list-fl{ overflow:hidden;}
 .list-fl li{ float:left; display:inline;}
 
 /*reset*/
+.col-xs-6{padding:0;}
 .row{margin:0;}
 .list-inline{margin:0;}
 .list-inline>li{padding:0;}
