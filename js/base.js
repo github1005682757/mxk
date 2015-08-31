@@ -1,5 +1,4 @@
 var GLOBAL = GLOBAL || {};
-
 //数组
 GLOBAL.Arr = GLOBAL.Arr || {};
 GLOBAL.Arr.arrIndexOf = function(arr, v){
@@ -11,29 +10,6 @@ GLOBAL.Arr.arrIndexOf = function(arr, v){
         }
     }
     return result;
-};
-
-//创建xmlHttpRequest
-GLOBAL.createXHR = function(){
-    var xhr = null;
-    if(typeof XMLHttpRequest != "undefined"){
-        xhr = new XMLHttpRequest();
-    }else if(typeof ActiveXObject != "undefined"){
-        if(typeof arguments.callee.activeXString != "string"){
-            var versions = ["MSXML2.XMLHttp.6.0","MSXMLK2.XMLHttp.3.0","MSXML2.XMLHttp"],
-                len;
-            for(i = 0, len = versions.length; i < len; i++){
-                try{
-                    new ActiveXObject(versions[i]);
-                    arguments.callee.activeXString = versions[i];
-                }catch(ex){}
-            }
-        }
-        xhr = new ActiveXObject(arguments.callee.activeXString);
-    }else{
-        throw new Error("No XHR obejct available.");
-    }
-    return xhr;
 };
 
 //操作class
@@ -277,6 +253,22 @@ GLOBAL.Method.stopPropagation = function (e) {
     }
 };
 
+//bind
+if(!Function.prototype.bind){
+	Function.prototype.bind = function(obj){
+		var slice = [].slice,
+			args = slice.call(arguments, 1),
+			self = this,
+			nop = function(){},
+			bound = function(){
+				return self.apply(this instanceof nop ? this : (obj || {}), args.concat(slice.call(arguments)));
+			};
+		nop.prototype = self.prototype;
+		bound.prototype = new nop();
+		return bound;
+	};
+}
+
 //表单校验
 GLOBAL.Verify = GLOBAL.Verify || {};
 
@@ -359,115 +351,4 @@ GLOBAL.Interface.ensureImplements = function (object) {
             }
         }
     }
-};
-
-//登录对象
-GLOBAL.register = function(address){
-    var oUserName = document.getElementsByName("username")[0];
-    var oPassword = document.getElementsByName("password")[0];
-    var oPassword2 = document.getElementsByName("password2")[0];
-    var oIdentity = document.getElementsByName("identity")[0];
-    var oRegisterSubmit = document.getElementById("registerSubmit");
-
-    GLOBAL.EventUtil.addHandler(oUserName,"blur",checkUserName);
-    GLOBAL.EventUtil.addHandler(oPassword,"blur",checkPassWord);
-    GLOBAL.EventUtil.addHandler(oPassword2,"blur",checkPassWord);
-    GLOBAL.EventUtil.addHandler(oIdentity,"blur",GLOBAL.identity);
-    //提交表单
-    GLOBAL.EventUtil.addHandler(oRegisterSubmit,"click",function(e){
-        e = e || window.event;
-        var result = false;
-        if(checkUserName()){
-            if(checkPassWord()){
-                if(GLOBAL.identity()){
-                    result = true;
-                }
-            }
-        }
-        e.cancelBubble = true;
-        alert(result);
-        return result;
-    });
-
-    function checkUserName(){
-        var result = false;
-        var sUserName = oUserName.value;
-        var oMessage = document.getElementById("nameMessage");
-        if(sUserName.length == 0){
-            oMessage.innerHTML = "请输入用户名";
-            oMessage.className = "error";
-            result = false;
-        }else{
-            var xhr = GLOBAL.createXHR();
-            xhr.open("POST", address + "servlet/CheckUserName?username=" + sUserName,false);
-            xhr.send(null);
-
-            if((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304){
-                if(xhr.responseText.indexOf("true") == 0){
-                    oMessage.innerHTML = "用户名已存在";
-                    oMessage.className = "error";
-                    result = false;
-                }else{
-                    oMessage.innerHTML = "恭喜，该用户名可以注册！";
-                    oMessage.className = "correct";
-                    result = true;
-                }
-            }else{
-                result = false;
-                alert("Request was unsucessful: " + xhr.status);
-            }
-        }
-        return result;
-    }
-
-    function checkPassWord(){
-        var result = false;
-        var oMessage = document.getElementById("passMessage");
-        var sPas1 = oPassword.value;
-        var sPas2 = oPassword2.value;
-        if( sPas1 != sPas2){
-            oMessage.innerHTML = "两次输入的密码不一样，请重新输入";
-            oMessage.className = "error";
-            result = false;
-        }else if(sPas1.length == 0 || sPas2.length == 0){
-            oMessage.innerHTML = "请输入密码！";
-            oMessage.className = "error";
-            result = false;
-        }else{
-            oMessage.innerHTML = "";
-            oMessage.className = "correct";
-            result = true;
-        }
-        return result;
-    }
-};
-
-GLOBAL.identity = function(){
-    var result = false;
-    var oIdentity = document.getElementsByName("identity")[0];
-    var oMessage = document.getElementById("identityMessage");
-    var xhr = GLOBAL.createXHR();
-    xhr.open("POST", GLOBAL.basePath + "servlet/CheckIdentity?identity=" + oIdentity.value,false);
-    xhr.send(null);
-    if(oIdentity.value.length == 0){
-        oMessage.innerHTML = "验证码为空";
-        oMessage.className = "error";
-        result = false;
-    }else{
-        if((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304){
-            if(xhr.responseText.indexOf("true") == 0){
-                oMessage.innerHTML = "正确";
-                oMessage.className = "correct";
-                result = true;
-            }else{
-                oMessage.innerHTML = "错误";
-                oMessage.className = "error";
-                result = true;
-            }
-        }else{
-            result = false;
-            alert("Request was unsucessful: " + xhr.status);
-        }
-    }
-    return result;
 };

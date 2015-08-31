@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script src="../../js/jquery-1.11.2.min.js"></script>
+		<script src="../../js/spine.js"></script>
+		<script>
+			var Person = Spine.Class.create();
+			Person.extend({
+				find: function(){}
+			});
+			Person.include({
+				init: function(atts){
+					this.attributes = atts || {};
+				}
+			});
+			var person = Person.init();
+		</script>
+	</body>
+</html>
