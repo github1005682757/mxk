@@ -1869,33 +1869,33 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				var $scroll = $(".box-deal .body");
-				var top = 0;
+				var time = 1000;
 				var rowHeight = 26;
 				$scroll.timer = setInterval(function() {
-					top += 1;
-					$scroll.css({
-						marginTop: -top + "px"
-					});
-					if (top == rowHeight) {
+					$scroll.animate({
+						marginTop: -rowHeight + "px"
+					}, time, function(){
+						$scroll.css({
+							marginTop: 0 + "px"
+						});
 						$scroll.find(".row:eq(0)").appendTo($scroll);
-						top = 0;
-					}
-				}, 30);
+					});
+				}, time);
 				$scroll.on({
 					mouseover: function() {
 						clearInterval($scroll.timer);
 					},
 					mouseout: function() {
 						$scroll.timer = setInterval(function() {
-							top += 1;
-							$scroll.css({
-								marginTop: -top + "px"
-							});
-							if (top == rowHeight) {
+							$scroll.animate({
+								marginTop: -rowHeight + "px"
+							}, time, function(){
+								$scroll.css({
+									marginTop: 0 + "px"
+								});
 								$scroll.find(".row:eq(0)").appendTo($scroll);
-								top = 0;
-							}
-						}, 30);
+							});
+						}, time)
 					}
 				});
 			});
