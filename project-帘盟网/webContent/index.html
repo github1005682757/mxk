@@ -5,74 +5,10 @@
 		<title></title>
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../css/main.css" />
-		<style type="text/css">
-			/*header start*/
-			#header{height:165px;}
-			#header .box-top .list-inline{ height:30px;}
-			#header .box-top .list-inline li{ padding: 0 8px; height: 30px; line-height: 30px;}
-			#header .box-top .pull-right li{padding:0 9px;}
-			#header .box-top .pull-right a{ color:#666;}
-			#header .box-search{margin-left:83px; padding-top:14px;}
-			#header .box-search .form-control{padding-left:30px; width:406px; height:35px; background:url(../images/icon-search.png) 7px 9px no-repeat;}
-			#header .box-search .btn-search{ border:none; width:80px; height:35px; font-size:14px; color:#fff; background:#716250;}
-			#header .admin{ padding-left:22px!important; background:url(../images/icon-admin.png) 0 6px no-repeat;}
-			.box-shop{padding:15px 31px 5px 62px; background:url(../images/bg-shop.png) 16px 11px no-repeat;}
-			.box-shop span{margin:5px 19px 0 0;}
-			.nav-1 strong{ width:270px; height:45px; line-height:45px; color:#fff; font-weight:bold;}
-			.nav-1 a{ display:block; padding:0 24px; height:45px; line-height:45px; font-size:16px; color:#fff; font-family:"微软雅黑";  text-decoration: none;}
-			.nav-1 .selected a{ background:#f90;}
-			/*header end*/
-			/*nav start*/
-			.group-1{height:427px;}
-			.group-1 .left{ }
-			.group-1 .center{ margin:1px 170px 0 271px; }
-			.group-1>.right{padding-top:7px; }
-			.group-1 .bor-cdb{border-top:none;}
-			.group-1 li{ border-top:1px solid #f0f0f0;}
-			.group-1 .col-left{width:47px;}
-			.group-1 .col-right{margin-left:47px;}
-			.group-1 .big{ font-size:16px; font-family: "微软雅黑"; font-weight: normal; color:#534739;}
-			.group-1 .small{ margin-left:7px; font-weight:normal; color:#FF6600;}
-			.group-1 dl{padding:13px 0 0 9px;}
-			.group-1 dt{height:22px; line-height:22px;}
-			.group-1 dd{ height:26px; line-height:26px;}
-			.group-1 dd a{margin-right:8px; color:#999;}
-			.carousel-indicators li{margin:0 0 0 9px; width:12px; height:12px; border:none; background:url(../images/slide-btn.png) -21px 0 no-repeat;}
-			.carousel-indicators .active{margin:0 0 0 9px; background-position:0 0;}
-			.text-need{ padding:5px; margin-top:8px; width:100%; height:138px; border:1px solid #eee; color:#333; line-height:1.5em;}
-			.link-fbcgxq{ display: block; height:41px; line-height:41px; font-weight:bold; border:1px solid #ffaa55; }
-			.link-fbcgxq:hover{ color:#fff; text-decoration: none;}
-			.box-phone{ height:40px; line-height:40px; text-indent:34px; background: url(../images/icon-phone.png) 3px 12px no-repeat;}
-			/*nav end*/
-			/*面料 start*/
-			.group-2>.left{ width:889px; }
-			.group-2>.right{ margin-left:909px; }
-			.h2-more{ border-bottom:2px solid #716250;}
-			.h2-more>strong{width:205px;height:40px; line-height:40px; background:#716250; color:#fff; font-size:20px; font-family: "微软雅黑";}
-			.h2-more>.more{margin-right:5px; height:40px; line-height:44px; color:#999; font-family: "宋体";}
-			.group-3>.left{ width:205px;}
-			.group-3>.left h3{height:38px; line-height:38px; font-size:18px; color:#716250; font-family: "宋体";}
-			.group-3>.left li{display:table;}
-			.group-3>.left li a{ display:table-cell; width:203px; height:81px; vertical-align: middle; border-top:1px solid #f2f2f2; }
-			.group-3>.left li img{ margin:0 auto;}
-			.group-3>.right{margin-left:222px;}
-			.group-3>.right>h3{ height:50px; line-height:50px; text-indent:3px; font-size:16px; color:#f60; font-family: "微软雅黑";}
-			.group-3>.right table td{height:26px;}
-			.group-3>.right .table-right{ border-left:1px solid #eee;}
-			.group-3>.right .table-right td{text-indent:2em;}
-			/*面料 end*/
-			/*行业资讯  start*/
-			.h3-bor{ height:40px; line-height:40px; background:#a4835b; border-left:10px solid #716250; font-size:20px; font-family: "微软雅黑"; color:#fff;}
-			.list-1 li { height:28px;line-height:28px;}
-			.list-1 li a{ font-size:14px; color:#000; font-family: "宋体";}
-			.box-more{ height:26px; overflow: hidden;}
-			.box-more a{color:#693; font-family: "宋体";}
-			/*行业资讯  end*/
-		</style>
 	</head>
-
-	<body style="background:url(../images/index.png) 257px 0 no-repeat; height: 3000px;">
-		<div id="header">
+	<body>
+		<!-- header start -->
+		<div id="header" class="overflow">
 			<!--欢迎上联盟网 start-->
 			<div class="bg-f2f">
 				<div class="center-block">
@@ -121,7 +57,7 @@
 			</div>
 			<!-- search end -->
 			<!-- nav start -->
-			<div class="mt15 nav-1 bg-716">
+			<div class="mt15 nav-1 bg-716 overflow">
 				<div class="center-block clearfix">
 					<strong class="fl text-center size-20 family-w bg-514">采购一点通</strong>
 					<ul class="list-inline fl">
@@ -137,9 +73,10 @@
 			</div>
 			<!-- nav end -->
 		</div>
-		<div id="content" class="center-block">
+		<!-- header end -->
+		<div id="content" class="center-block clearfix">
 			<!-- nav start -->
-			<div class="group-1">
+			<div class="group-1 clearfix overflow">
 				<div class="left w270 fl">
 					<div class="bor-cdb">
 						<!-- Nav tabs -->
@@ -330,136 +267,144 @@
 							<div class="bor-f2f">
 								<h3 class="text-center">上榜供应商</h3>
 								<ul>
-									<li><a href=""><img src="../images/mianliao-1.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-2.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-3.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-4.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-5.png" alt="" /></a></li>
+									<li>
+										<a href=""><img src="../images/mianliao-1.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-2.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-3.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-4.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-5.png" alt="" /></a>
+									</li>
 								</ul>
 							</div>
 						</div>
 						<div class="right">
 							<div id="slide-2" class="carousel slide" data-ride="carousel">
-							  <!-- Indicators -->
-							  <ol class="carousel-indicators">
-							    <li data-target="#slide-2" data-slide-to="0" class="active"></li>
-							    <li data-target="#slide-2" data-slide-to="1"></li>
-							    <li data-target="#slide-2" data-slide-to="2"></li>
-							    <li data-target="#slide-2" data-slide-to="3"></li>
-							  </ol>
-							
-							  <!-- Wrapper for slides -->
-							  <div class="carousel-inner" role="listbox">
-							    <div class="item active">
-							      <img src="../images/slide-4.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							    <div class="item">
-							      <img src="../images/slide-5.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							    <div class="item">
-							      <img src="../images/slide-6.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							    <div class="item">
-							      <img src="../images/slide-7.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							  </div>
-							
-							  <!-- Controls -->
-							  <a class="left carousel-control" href="#slide-2" role="button" data-slide="prev">
-							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							    <span class="sr-only">Previous</span>
-							  </a>
-							  <a class="right carousel-control" href="#slide-2" role="button" data-slide="next">
-							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							    <span class="sr-only">Next</span>
-							  </a>
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#slide-2" data-slide-to="0" class="active"></li>
+									<li data-target="#slide-2" data-slide-to="1"></li>
+									<li data-target="#slide-2" data-slide-to="2"></li>
+									<li data-target="#slide-2" data-slide-to="3"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="../images/slide-4.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+									<div class="item">
+										<img src="../images/slide-5.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+									<div class="item">
+										<img src="../images/slide-6.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+									<div class="item">
+										<img src="../images/slide-7.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+								</div>
+
+								<!-- Controls -->
+								<a class="left carousel-control" href="#slide-2" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#slide-2" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
 							</div>
 							<h3>热销排行</h3>
 							<div class="row">
-							  <div class="col-xs-6">
-							  	<table>
-							  		<tbody>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  		</tbody>
-							  	</table>
-							  </div>
-							  <div class="col-xs-6">
-								<table class="table-right">
-							  		<tbody>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  		</tbody>
-							  	</table>
-							  </div>
+								<div class="col-xs-6">
+									<table>
+										<tbody>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="col-xs-6">
+									<table class="table-right">
+										<tbody>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- 面料 end -->
-				<!-- 百叶帘片 start -->
-				<div class="left fl mt16">
-					<h2 class="h2-more clearfix">
+					<!-- 面料 end -->
+					<!-- 百叶帘片 start -->
+					<h2 class="h2-more clearfix mt16">
 						<strong class="fl text-center">百叶帘片</strong>
 						<a href="#" class="more fr">更多>></a>
 					</h2>
@@ -468,136 +413,144 @@
 							<div class="bor-f2f">
 								<h3 class="text-center">上榜供应商</h3>
 								<ul>
-									<li><a href=""><img src="../images/mianliao-1.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-2.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-3.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-4.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-5.png" alt="" /></a></li>
+									<li>
+										<a href=""><img src="../images/mianliao-1.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-2.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-3.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-4.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-5.png" alt="" /></a>
+									</li>
 								</ul>
 							</div>
 						</div>
 						<div class="right">
 							<div id="slide-3" class="carousel slide" data-ride="carousel">
-							  <!-- Indicators -->
-							  <ol class="carousel-indicators">
-							    <li data-target="#slide-3" data-slide-to="0" class="active"></li>
-							    <li data-target="#slide-3" data-slide-to="1"></li>
-							    <li data-target="#slide-3" data-slide-to="2"></li>
-							    <li data-target="#slide-3" data-slide-to="3"></li>
-							  </ol>
-							
-							  <!-- Wrapper for slides -->
-							  <div class="carousel-inner" role="listbox">
-							    <div class="item active">
-							      <img src="../images/slide-5.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							    <div class="item">
-							      <img src="../images/slide-4.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							    <div class="item">
-							      <img src="../images/slide-6.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							    <div class="item">
-							      <img src="../images/slide-7.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							  </div>
-							
-							  <!-- Controls -->
-							  <a class="left carousel-control" href="#slide-3" role="button" data-slide="prev">
-							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							    <span class="sr-only">Previous</span>
-							  </a>
-							  <a class="right carousel-control" href="#slide-3" role="button" data-slide="next">
-							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							    <span class="sr-only">Next</span>
-							  </a>
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#slide-3" data-slide-to="0" class="active"></li>
+									<li data-target="#slide-3" data-slide-to="1"></li>
+									<li data-target="#slide-3" data-slide-to="2"></li>
+									<li data-target="#slide-3" data-slide-to="3"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="../images/slide-5.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+									<div class="item">
+										<img src="../images/slide-4.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+									<div class="item">
+										<img src="../images/slide-6.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+									<div class="item">
+										<img src="../images/slide-7.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+								</div>
+
+								<!-- Controls -->
+								<a class="left carousel-control" href="#slide-3" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#slide-3" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
 							</div>
 							<h3>热销排行</h3>
 							<div class="row">
-							  <div class="col-xs-6">
-							  	<table>
-							  		<tbody>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  		</tbody>
-							  	</table>
-							  </div>
-							  <div class="col-xs-6">
-								<table class="table-right">
-							  		<tbody>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  		</tbody>
-							  	</table>
-							  </div>
+								<div class="col-xs-6">
+									<table>
+										<tbody>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="col-xs-6">
+									<table class="table-right">
+										<tbody>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- 百叶帘片 end -->
-				<!-- 辅料配件 start -->
-				<div class="left fl mt16">
-					<h2 class="h2-more clearfix">
+					<!-- 百叶帘片 end -->
+					<!-- 辅料配件 start -->
+					<h2 class="h2-more clearfix mt16">
 						<strong class="fl text-center">辅料配件</strong>
 						<a href="#" class="more fr">更多>></a>
 					</h2>
@@ -606,134 +559,142 @@
 							<div class="bor-f2f">
 								<h3 class="text-center">上榜供应商</h3>
 								<ul>
-									<li><a href=""><img src="../images/mianliao-1.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-2.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-3.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-4.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-5.png" alt="" /></a></li>
+									<li>
+										<a href=""><img src="../images/mianliao-1.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-2.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-3.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-4.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-5.png" alt="" /></a>
+									</li>
 								</ul>
 							</div>
 						</div>
 						<div class="right">
 							<div id="slide-4" class="carousel slide" data-ride="carousel">
-							  <!-- Indicators -->
-							  <ol class="carousel-indicators">
-							    <li data-target="#slide-4" data-slide-to="0" class="active"></li>
-							    <li data-target="#slide-4" data-slide-to="1"></li>
-							    <li data-target="#slide-4" data-slide-to="2"></li>
-							    <li data-target="#slide-4" data-slide-to="3"></li>
-							  </ol>
-							  <!-- Wrapper for slides -->
-							  <div class="carousel-inner" role="listbox">
-							    <div class="item active">
-							      <img src="../images/slide-6.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							    <div class="item">
-							      <img src="../images/slide-4.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							    <div class="item">
-							      <img src="../images/slide-5.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							    <div class="item">
-							      <img src="../images/slide-7.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							  </div>
-							  <!-- Controls -->
-							  <a class="left carousel-control" href="#slide-4" role="button" data-slide="prev">
-							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							    <span class="sr-only">Previous</span>
-							  </a>
-							  <a class="right carousel-control" href="#slide-4" role="button" data-slide="next">
-							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							    <span class="sr-only">Next</span>
-							  </a>
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#slide-4" data-slide-to="0" class="active"></li>
+									<li data-target="#slide-4" data-slide-to="1"></li>
+									<li data-target="#slide-4" data-slide-to="2"></li>
+									<li data-target="#slide-4" data-slide-to="3"></li>
+								</ol>
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="../images/slide-6.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+									<div class="item">
+										<img src="../images/slide-4.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+									<div class="item">
+										<img src="../images/slide-5.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+									<div class="item">
+										<img src="../images/slide-7.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+								</div>
+								<!-- Controls -->
+								<a class="left carousel-control" href="#slide-4" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#slide-4" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
 							</div>
 							<h3>热销排行</h3>
 							<div class="row">
-							  <div class="col-xs-6">
-							  	<table>
-							  		<tbody>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  		</tbody>
-							  	</table>
-							  </div>
-							  <div class="col-xs-6">
-								<table class="table-right">
-							  		<tbody>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  		</tbody>
-							  	</table>
-							  </div>
+								<div class="col-xs-6">
+									<table>
+										<tbody>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="col-xs-6">
+									<table class="table-right">
+										<tbody>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- 辅料配件 end -->
-				<!-- 电机 start -->
-				<div class="left fl mt16">
-					<h2 class="h2-more clearfix">
+					<!-- 辅料配件 end -->
+					<!-- 电机 start -->
+					<h2 class="h2-more clearfix mt16">
 						<strong class="fl text-center">电机</strong>
 						<a href="#" class="more fr">更多>></a>
 					</h2>
@@ -742,126 +703,136 @@
 							<div class="bor-f2f">
 								<h3 class="text-center">上榜供应商</h3>
 								<ul>
-									<li><a href=""><img src="../images/mianliao-1.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-2.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-3.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-4.png" alt="" /></a></li>
-									<li><a href=""><img src="../images/mianliao-5.png" alt="" /></a></li>
+									<li>
+										<a href=""><img src="../images/mianliao-1.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-2.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-3.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-4.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="../images/mianliao-5.png" alt="" /></a>
+									</li>
 								</ul>
 							</div>
 						</div>
 						<div class="right">
 							<div id="slide-5" class="carousel slide" data-ride="carousel">
-							  <!-- Indicators -->
-							  <ol class="carousel-indicators">
-							    <li data-target="#slide-5" data-slide-to="0" class="active"></li>
-							    <li data-target="#slide-5" data-slide-to="1"></li>
-							    <li data-target="#slide-5" data-slide-to="2"></li>
-							    <li data-target="#slide-5" data-slide-to="3"></li>
-							  </ol>
-							  <!-- Wrapper for slides -->
-							  <div class="carousel-inner" role="listbox">
-							    <div class="item active">
-							      <img src="../images/slide-7.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							    <div class="item">
-							      <img src="../images/slide-4.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							    <div class="item">
-							      <img src="../images/slide-5.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							    <div class="item">
-							      <img src="../images/slide-6.png" alt="">
-							      <div class="carousel-caption"></div>
-							    </div>
-							  </div>
-							  <!-- Controls -->
-							  <a class="left carousel-control" href="#slide-5" role="button" data-slide="prev">
-							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							    <span class="sr-only">Previous</span>
-							  </a>
-							  <a class="right carousel-control" href="#slide-5" role="button" data-slide="next">
-							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							    <span class="sr-only">Next</span>
-							  </a>
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#slide-5" data-slide-to="0" class="active"></li>
+									<li data-target="#slide-5" data-slide-to="1"></li>
+									<li data-target="#slide-5" data-slide-to="2"></li>
+									<li data-target="#slide-5" data-slide-to="3"></li>
+								</ol>
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="../images/slide-7.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+									<div class="item">
+										<img src="../images/slide-4.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+									<div class="item">
+										<img src="../images/slide-5.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+									<div class="item">
+										<img src="../images/slide-6.png" alt="">
+										<div class="carousel-caption"></div>
+									</div>
+								</div>
+								<!-- Controls -->
+								<a class="left carousel-control" href="#slide-5" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#slide-5" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
 							</div>
 							<h3>热销排行</h3>
 							<div class="row">
-							  <div class="col-xs-6">
-							  	<table>
-							  		<tbody>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  		</tbody>
-							  	</table>
-							  </div>
-							  <div class="col-xs-6">
-								<table class="table-right">
-							  		<tbody>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  			<tr>
-							  				<td><a class="color-A48" href="">粗亚麻布料</a></td>
-							  				<td><a class="color-000" href="">丹姆菲</a></td>
-							  				<td><a class="color-693" href="">黑色5</a></td>
-							  				<td><a class="color-f60" href="">240.00</a></td>
-							  			</tr>
-							  		</tbody>
-							  	</table>
-							  </div>
+								<div class="col-xs-6">
+									<table>
+										<tbody>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="col-xs-6">
+									<table class="table-right">
+										<tbody>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+											<tr>
+												<td><a class="color-A48" href="">粗亚麻布料</a></td>
+												<td><a class="color-000" href="">丹姆菲</a></td>
+												<td><a class="color-693" href="">黑色5</a></td>
+												<td><a class="color-f60" href="">240.00</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -891,15 +862,1044 @@
 					<div class="clearfix box-more">
 						<a class="fr more-green" href="">更多>></a>
 					</div>
+					<h3 class="h3-bor text-center">当日成交</h3>
+					<div class="box-deal overflow">
+						<div class="header">
+							<div class="row">
+								<div class="col-xs-6 col-sm-3">用户</div>
+								<div class="col-xs-6 col-sm-3">采购内容</div>
+								<div class="clearfix visible-xs-block"></div>
+								<div class="col-xs-6 col-sm-3">交易状态</div>
+								<div class="col-xs-6 col-sm-3">时间</div>
+							</div>
+						</div>
+						<div class="overflow">
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
 				</div>
 				<!-- right end -->
 			</div>
 			<!-- 面料 end -->
-			
 		</div>
-		<div id="footer"></div>
+		<!-- footer start -->
+		<div id="footer">
+			<div class="clearfix box-link-map">
+				<div class="center-block">
+					<div class="left fl">
+						<img src="../images/icon-weixin.png" alt="帘盟网微信号" />
+						<p>帘盟网微信号</p>
+					</div>
+					<div class="right">
+						<ul class="list-fl list-map">
+							<li>
+								<dl>
+									<dt>
+										<img src="../images/map-1.png" alt="" />
+									</dt>
+									<dd>
+										<a href=""><b>我要采购</b></a>
+									</dd>
+									<dd><a href="#">如何找货</a></dd>
+									<dd><a href="#">发布需求</a></dd>
+									<dd><a href="#">帘盟商城采购流程</a></dd>
+									<dd><a href="#">淘货市场</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<img src="../images/map-2.png" alt="" />
+									</dt>
+									<dd>
+										<a href=""><b>我要供货</b></a>
+									</dd>
+									<dd><a href="#">申请加盟</a></dd>
+									<dd><a href="#">报价单上传</a></dd>
+									<dd><a href="#">参与报价</a></dd>
+									<dd><a href="#">帘盟撮合成交</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<img src="../images/map-3.png" alt="" />
+									</dt>
+									<dd>
+										<a href=""><b>交易指南</b></a>
+									</dd>
+									<dd><a href="#">交易规则</a></dd>
+									<dd><a href="#">交易安全</a></dd>
+									<dd><a href="#">物流配送</a></dd>
+									<dd><a href="#">收费标准</a></dd>
+									<dd><a href="#">帘盟网账号</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<img src="../images/map-4.png" alt="" />
+									</dt>
+									<dd>
+										<a href=""><b>常见问题</b></a>
+									</dd>
+									<dd><a href="#">注册流程</a></dd>
+									<dd><a href="#">无法登录/忘记密码</a></dd>
+									<dd><a href="#">修改账户资料</a></dd>
+									<dd><a href="#">会员中心</a></dd>
+									<dd><a href="#">网站导航</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="center-block box-link-about pt20">
+				<p class="text-center">
+					<a href="#">关于我们</a>
+					<a href="#">法律声明</a>
+					<a href="#">隐私条款</a>
+					<a href="#">人才招聘</a>
+					<a href="#">合作机会</a>
+					<a href="#">联系我们</a>
+				</p>
+				<p class="text-center">上海帘盟网电子商务有限公司 版权所有&copy; 沪ICP备13********号 All Rights Reserved</p>
+			</div>
+		</div>
+		<!-- footer end -->
 		<script src="../js/jquery-1.11.2.min.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/scroll.js"></script>
+		<!-[if IE]>
+		<script src="../js/jquery.placeholder.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+		<![endif]>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var $scroll = $(".box-deal .body");
+				var time = 1000;
+				var rowHeight = 26;
+				$scroll.timer = setInterval(function() {
+					$scroll.animate({
+						marginTop: -rowHeight + "px"
+					}, time, function(){
+						$scroll.css({
+							marginTop: 0 + "px"
+						});
+						$scroll.find(".row:eq(0)").appendTo($scroll);
+					});
+				}, time);
+				$scroll.on({
+					mouseover: function() {
+						clearInterval($scroll.timer);
+					},
+					mouseout: function() {
+						$scroll.timer = setInterval(function() {
+							$scroll.animate({
+								marginTop: -rowHeight + "px"
+							}, time, function(){
+								$scroll.css({
+									marginTop: 0 + "px"
+								});
+								$scroll.find(".row:eq(0)").appendTo($scroll);
+							});
+						}, time)
+					}
+				});
+			});
+		</script>
 	</body>
 
 </html>
