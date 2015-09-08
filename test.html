@@ -7,68 +7,10 @@
 	</head>
 	<body>
 		<script>
-			function add(a, b){
-				return a + b;
-			}
-			
-			function sub(a, b){
-				return a - b;
-			}
-			//alert(add.call(sub, 3, 1));
-			
-			function Animal(){
-				this.name = "动物";
-				this.getName = function(){
-					return this.name;
-				};
-			}
-				
-			function Cats(){
-				Animal.call(this);
-				this.name = "猫科动物";
-				this.pashu = function(){
-					return "爬树";
-				};
-			}
-			
-			function Cat(name){
-				Animal.call(this);
-				Cats.call(this);
-				this.name = name;
-			}
-			
-			//var animal = new Animal();
-			//var cat = new Cats();
-			var jiafei = new Cat("加菲");
-			//alert(jiafei.getName());
-			
-			
-			function curry(fn){
-				var args = Array.prototype.slice(arguments, 1);
-				return function(){
-					var innerArgs = Array.prototype.slice.call(arguments);
-					var finalArgs = args.concat(innerArgs);
-					console.log(finalArgs);
-					return fn.apply(this, finalArgs);
-				};
-			}
-			
-			function add(num1, num2, num3){
-				return num1 + num2 + num3;
-			}
-			var t = curry(add, 50)(1, 2);
-			//alert(t);
-			
-			
-			function Person(name){
-				this.name = name;
-				return this;
-			}
-			Person.prototype.getName = function(){
-				return this.name;
+			Function.prototype.alert = function(str){
+				document.write(str);
 			};
-			var p1 = new Person("Tom");
-			//alert(p1.getName());
+			alert.alert(123);
 		</script>
 	</body>
 </html>
