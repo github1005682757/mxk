@@ -407,7 +407,7 @@
 			<!--产品详情结束-->
 			<!--文字详情-->
 			<div class="fwxx_xx_wenzi_warp">
-				<div class="fwxx_xx_wenzi_left tabs">
+				<div class="fwxx_xx_wenzi_left tabs pr">
 					<div class="fwxx_xx_wenzi_left_title">
 						<ul class="ls_tab ls_fl clearfix">
 							<li class="selected" value="0">
@@ -863,6 +863,7 @@
 		</div>
 	</div>
 	<style>
+		.fwxx_xx_wenzi_left_fixed{position:fixed; z-index:2; top:0; width:920px; background:#fff;}
 		.fwxx_xx_wenzi_left_title .selected a.normal{ color:#333; background:none;}
 		.fwxx_xx_wenzi_left_title .selected a.selected{ color:#fff; background:#1369c0;}
 	</style>
@@ -874,6 +875,17 @@
 	<script src="../js/163css.js"></script>
 	<script type="text/javascript">
     	$(document).ready(function(e) {
+    		//导航固定
+    		var $scroll = $(".fwxx_xx_wenzi_left_title");
+    		$scroll.data("data-top", $scroll.offset().top);
+    		$(window).bind("scroll", function(){
+    			var $this = $(this);
+    			if($this.scrollTop() >= $scroll.data("data-top")){
+    				$scroll.addClass("fwxx_xx_wenzi_left_fixed");
+    			}else{
+    				$scroll.removeClass("fwxx_xx_wenzi_left_fixed");
+    			}
+    		});
 			//初始化搜索
 			GLOBAL.Search.init();
 			//二级导航Slide
@@ -889,7 +901,6 @@
 					}
 				});
 				$(".ls_tab li").bind("mouseover",function(){
-					$(".ls_tab li.selected a:eq(0)").addClass("selected").removeClass("normal").siblings("a").removeClass("selected").addClass("normal");
 					var $tab = $(this).parents(".tabs");
 					var index = $(this).attr("value");
 					var $selected = $(this).siblings(".selected").removeClass("selected");
