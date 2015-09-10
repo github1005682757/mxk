@@ -5,8 +5,14 @@
 		<title></title>
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../css/main.css" />
+		<style>
+			.box-need{height:172px; border:1px solid #ddd;}
+			.box-need:hover{border:1px solid #ff9a02;}
+			.box-need>.left{ width:151px;}
+			.box-need>.left .price{ display:block; height:127px; line-height:127px; text-align:center;}
+		</style>
 	</head>
-	<body style="background:url(../images/采购需求.png) 256px 0 no-repeat; height:3000px;">
+	<body style="background:url(../images/采购需求.png) -21px 0 no-repeat; height:3000px;">
 		<!-- header start -->
 		<div id="header" class="overflow">
 			<!--欢迎上联盟网 start-->
@@ -75,7 +81,7 @@
 		</div>
 		<!-- header end -->
 		<!-- content start -->
-		<div id="content" class="center-block clearfix pt25">
+		<div id="content" class="center-block clearfix pt25" style="height:3000px;">
 			<div class="w892 fl">
 				<ul class="list-inline box-bjd-fun">
 					<li>
@@ -133,13 +139,19 @@
 					<ul class="clearfix fr list-page-fun">
 						<li class="fl first"><span class="color-f60">1</span>/10</li>
 						<li class="fl clearfix">
-							<a class="previous" href="">
-								</a>
+							<a class="previous" href=""><</a>
 							<a class="next" href="">></a>
 						</li>
 					</ul>
 				</div>
-				<div class="box-need"></div>
+				<div class="box-need clearfix">
+					<div class="left">
+						<a class="price" href="">26.50元</a>
+						<a class="purpose-price" href="">意向价格</a>
+					</div>
+					<div class="center"></div>
+					<div class="right"></div>
+				</div>
 			</div>
 			
 			<div class="w280 fr">
