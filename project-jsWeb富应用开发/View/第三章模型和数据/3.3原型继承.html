@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var Model = {
+				inherited: function(){},
+				created: function(){},
+				prototype: {
+					init: function(name){
+						console.log(name);
+					}
+				},
+				create: function(){
+					var object = Object.create(this);
+					object.parent = this;
+					object.prototype = object.fn = Object.create(this.prototype);
+					object.created();
+					this.inherited(object);
+					return object;
+				},
+				init: function(){
+					var instance = Object.create(this.prototype);
+					instance.parent = this;
+					instance.init.apply(instance, arguments);
+					return instance;
+				}
+			};
+			
+			var Asset = Model.create();
+			var User = Model.create();
+			var user = User.init("user");
+		</script>
+	</body>
+</html>
