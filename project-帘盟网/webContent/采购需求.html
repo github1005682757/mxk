@@ -6,13 +6,18 @@
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../css/main.css" />
 		<style>
-			.box-need{height:172px; border:1px solid #ddd;}
+			/*采购需求 start*/
+			.box-need{height:174px; border:1px solid #ddd;}
 			.box-need:hover{border:1px solid #ff9a02;}
 			.box-need>.left{ width:151px;}
-			.box-need>.left .price{ display:block; height:127px; line-height:127px; text-align:center;}
+			.box-need>.left .price{ font-size:18px; color:#f90; background:#fff2bf; font-weight:bold; font-family: "微软雅黑"; display:block; height:127px; line-height:130px; text-align:center; text-decoration: none;}
+			.box-need>.left .purpose-price{ display:block; height:45px; line-height:48px; text-align:center; font-size:16px; color:#fff; font-family: "微软雅黑"; text-decoration: none; background:#a4835b;}
+			.box-need>.center{width:538px;}
+			/*采购需求 end*/  
+			
 		</style>
 	</head>
-	<body style="background:url(../images/采购需求.png) -21px 0 no-repeat; height:3000px;">
+	<body style="background:url(../images/采购需求.png) -20px 0 no-repeat; height:3000px;">
 		<!-- header start -->
 		<div id="header" class="overflow">
 			<!--欢迎上联盟网 start-->
@@ -144,12 +149,25 @@
 						</li>
 					</ul>
 				</div>
-				<div class="box-need clearfix">
-					<div class="left">
+				<div class="box-need clearfix mt15">
+					<div class="left fl">
 						<a class="price" href="">26.50元</a>
 						<a class="purpose-price" href="">意向价格</a>
 					</div>
-					<div class="center"></div>
+					<div class="center fl">
+						<div class="row-538 clearfix">       
+							<div class="w85 text-right fl">求购：</div>
+							<div class="fl"><a href="">北欧纯棉帆布</a></div>
+						</div>
+						<div class="row-538 clearfix">       
+							<div class="w85 text-right fl">数量：</div>
+							<div class="fl"><a href="">230</a>件</div>
+						</div>
+						<div class="row-538 clearfix">       
+							<div class="w85 text-right fl">发布时间：</div>
+							<div class="fl">7小时前</div>
+						</div>
+					</div>
 					<div class="right"></div>
 				</div>
 			</div>
