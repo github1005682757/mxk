@@ -7,17 +7,29 @@
 		<link rel="stylesheet" href="../css/main.css" />
 		<style>
 			/*采购需求 start*/
-			.box-need{height:174px; border:1px solid #ddd;}
+			.box-need{height:174px; border:1px solid #ddd; background: #fff;}
 			.box-need:hover{border:1px solid #ff9a02;}
 			.box-need>.left{ width:151px;}
 			.box-need>.left .price{ font-size:18px; color:#f90; background:#fff2bf; font-weight:bold; font-family: "微软雅黑"; display:block; height:127px; line-height:130px; text-align:center; text-decoration: none;}
 			.box-need>.left .purpose-price{ display:block; height:45px; line-height:48px; text-align:center; font-size:16px; color:#fff; font-family: "微软雅黑"; text-decoration: none; background:#a4835b;}
-			.box-need>.center{width:538px;}
+			.box-need>.center{padding-top:9px; width:538px; }
+			.box-need>.center .row{ height:29px; line-height:29px; overflow:hidden;}
+			.box-need>.center .row .w85{ color:#999; font-family: "宋体";}
+			.box-admin>.box-img{padding:14px 0 0 38px;}
+			.box-need>.right{ width:200px; height:140px; border-left:1px solid #f0f0f0;}
+			.box-need>.right .link-price{display:block; font-family: "微软雅黑"; font-size:16px; height:40px; line-height:40px; text-align:center; text-decoration: none;}
+			.box-need>.right .deal-success{ padding-top:28px; height:68px; background:url(../images/icon-success.png) center 0 no-repeat;}
+			.btn-120-40{ display:block; width:120px; height:40px; line-height:40px; text-align:center; background:#f90; color:#fff; font-size:18px; font-family: "微软雅黑"; border:none; }
+			.btn-120-40:hover{ text-decoration: none;}
+			.link-helper2{ display:block; padding:53px 0 0 10px; height:88px; background:url(../images/icon-helper2.png); font-size:19px; color:#fff; font-weight: bold; font-family: "微软雅黑"; text-decoration: none;}
+			.link-helper2:hover{ text-decoration: none;}
+			.box-tianxie{ background:url(../images/icon-tianxie.png) no-repeat;}
+			.box-tianxie a{float:left; width:71px; height:71px; padding:15px 19px; line-height:18px; font-size:16px; color:#fff; font-family: "微软雅黑";}
 			/*采购需求 end*/  
 			
 		</style>
 	</head>
-	<body style="background:url(../images/采购需求.png) -20px 0 no-repeat; height:3000px;">
+	<body>
 		<!-- header start -->
 		<div id="header" class="overflow">
 			<!--欢迎上联盟网 start-->
@@ -86,8 +98,8 @@
 		</div>
 		<!-- header end -->
 		<!-- content start -->
-		<div id="content" class="center-block clearfix pt25" style="height:3000px;">
-			<div class="w892 fl">
+		<div id="content" class="center-block clearfix pt10">
+			<div class="w892 fl pt15">
 				<ul class="list-inline box-bjd-fun">
 					<li>
 						<span>品类</span>
@@ -149,31 +161,563 @@
 						</li>
 					</ul>
 				</div>
+				
 				<div class="box-need clearfix mt15">
 					<div class="left fl">
 						<a class="price" href="">26.50元</a>
 						<a class="purpose-price" href="">意向价格</a>
 					</div>
 					<div class="center fl">
-						<div class="row-538 clearfix">       
+						<div class="row clearfix">       
 							<div class="w85 text-right fl">求购：</div>
-							<div class="fl"><a href="">北欧纯棉帆布</a></div>
+							<div class="fl pl7"><a class="size-14" href="">北欧纯棉帆布</a></div>
 						</div>
-						<div class="row-538 clearfix">       
+						<div class="row clearfix">       
 							<div class="w85 text-right fl">数量：</div>
-							<div class="fl"><a href="">230</a>件</div>
+							<div class="fl pl7 size-14"><a class="size-14 color-f90 bold" href="">230</a>件</div>
 						</div>
-						<div class="row-538 clearfix">       
+						<div class="row clearfix">       
 							<div class="w85 text-right fl">发布时间：</div>
-							<div class="fl">7小时前</div>
+							<div class="fl color-999 pl7">7小时前</div>
+						</div>
+						<div class="clearfix box-admin">
+							<div class="fl box-img">
+								<a href=""><img src="../images/icon-header.png" alt="" /></a>
+							</div>
+							<div class="fl clearfix">
+								<div class="clearfix mt18">
+									<div class="w61 text-right fl color-999">交易员：</div>
+									<div class="fl mt-4 ml7"><a class="color-A48 size-14" href="">1602号</a></div>
+								</div>
+								<div class="clearfix mt7">
+									<div class="w61 text-right fl color-999">电话：</div>
+									<div class="fl color-000 size-14 ml7">021-58901234</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="right"></div>
+					<div class="right mt16 fl">
+						<div class="mt28">
+							<a class="color-693 link-price" href="">已有报价（53）</a>
+						</div>
+						<div>
+							<a href="" class="btn-120-40 center-block">报价</a>
+						</div>
+					</div>
+				</div>
+				<div class="box-need clearfix mt15">
+					<div class="left fl">
+						<a class="price" href="">26.50元</a>
+						<a class="purpose-price" href="">意向价格</a>
+					</div>
+					<div class="center fl">
+						<div class="row clearfix">       
+							<div class="w85 text-right fl">求购：</div>
+							<div class="fl pl7"><a class="size-14" href="">北欧纯棉帆布</a></div>
+						</div>
+						<div class="row clearfix">       
+							<div class="w85 text-right fl">数量：</div>
+							<div class="fl pl7 size-14"><a class="size-14 color-f90 bold" href="">230</a>件</div>
+						</div>
+						<div class="row clearfix">       
+							<div class="w85 text-right fl">发布时间：</div>
+							<div class="fl color-999 pl7">7小时前</div>
+						</div>
+						<div class="clearfix box-admin">
+							<div class="fl box-img">
+								<a href=""><img src="../images/icon-header.png" alt="" /></a>
+							</div>
+							<div class="fl clearfix">
+								<div class="clearfix mt18">
+									<div class="w61 text-right fl color-999">交易员：</div>
+									<div class="fl mt-4 ml7"><a class="color-A48 size-14" href="">1602号</a></div>
+								</div>
+								<div class="clearfix mt7">
+									<div class="w61 text-right fl color-999">电话：</div>
+									<div class="fl color-000 size-14 ml7">021-58901234</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right mt16 fl">
+						<div class="mt28">
+							<a class="color-399 link-price" href="">比价洽谈中</a>
+						</div>
+						<div>
+							<a href="" class="btn-120-40 center-block">报价</a>
+						</div>
+					</div>
+				</div>
+				<div class="box-need clearfix mt15">
+					<div class="left fl">
+						<a class="price" href="">26.50元</a>
+						<a class="purpose-price" href="">意向价格</a>
+					</div>
+					<div class="center fl">
+						<div class="row clearfix">       
+							<div class="w85 text-right fl">求购：</div>
+							<div class="fl pl7"><a class="size-14" href="">北欧纯棉帆布</a></div>
+						</div>
+						<div class="row clearfix">       
+							<div class="w85 text-right fl">数量：</div>
+							<div class="fl pl7 size-14"><a class="size-14 color-f90 bold" href="">230</a>件</div>
+						</div>
+						<div class="row clearfix">       
+							<div class="w85 text-right fl">发布时间：</div>
+							<div class="fl color-999 pl7">7小时前</div>
+						</div>
+						<div class="clearfix box-admin">
+							<div class="fl box-img">
+								<a href=""><img src="../images/icon-header.png" alt="" /></a>
+							</div>
+							<div class="fl clearfix">
+								<div class="clearfix mt18">
+									<div class="w61 text-right fl color-999">交易员：</div>
+									<div class="fl mt-4 ml7"><a class="color-A48 size-14" href="">1602号</a></div>
+								</div>
+								<div class="clearfix mt7">
+									<div class="w61 text-right fl color-999">电话：</div>
+									<div class="fl color-000 size-14 ml7">021-58901234</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right mt16 fl">
+						<div class="mt28">
+							<a class="color-000 link-price" href="">暂无报价</a>
+						</div>
+						<div>
+							<a href="" class="btn-120-40 center-block">报价</a>
+						</div>
+					</div>
+				</div>
+				<div class="box-need clearfix mt15">
+					<div class="left fl">
+						<a class="price" href="">26.50元</a>
+						<a class="purpose-price" href="">意向价格</a>
+					</div>
+					<div class="center fl">
+						<div class="row clearfix">       
+							<div class="w85 text-right fl">求购：</div>
+							<div class="fl pl7"><a class="size-14" href="">北欧纯棉帆布</a></div>
+						</div>
+						<div class="row clearfix">       
+							<div class="w85 text-right fl">数量：</div>
+							<div class="fl pl7 size-14"><a class="size-14 color-f90 bold" href="">230</a>件</div>
+						</div>
+						<div class="row clearfix">       
+							<div class="w85 text-right fl">发布时间：</div>
+							<div class="fl color-999 pl7">7小时前</div>
+						</div>
+						<div class="clearfix box-admin">
+							<div class="fl box-img">
+								<a href=""><img src="../images/icon-header.png" alt="" /></a>
+							</div>
+							<div class="fl clearfix">
+								<div class="clearfix mt18">
+									<div class="w61 text-right fl color-999">交易员：</div>
+									<div class="fl mt-4 ml7"><a class="color-A48 size-14" href="">1602号</a></div>
+								</div>
+								<div class="clearfix mt7">
+									<div class="w61 text-right fl color-999">电话：</div>
+									<div class="fl color-000 size-14 ml7">021-58901234</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right mt16 fl">
+						<div>
+							<a class="color-f60 link-price deal-success" href="">交易成功</a>
+						</div>
+						<div>
+							<a href="" class="btn-120-40 center-block">报价</a>
+						</div>
+					</div>
+				</div>
+				<div class="box-need clearfix mt15">
+					<div class="left fl">
+						<a class="price" href="">26.50元</a>
+						<a class="purpose-price" href="">意向价格</a>
+					</div>
+					<div class="center fl">
+						<div class="row clearfix">       
+							<div class="w85 text-right fl">求购：</div>
+							<div class="fl pl7"><a class="size-14" href="">北欧纯棉帆布</a></div>
+						</div>
+						<div class="row clearfix">       
+							<div class="w85 text-right fl">数量：</div>
+							<div class="fl pl7 size-14"><a class="size-14 color-f90 bold" href="">230</a>件</div>
+						</div>
+						<div class="row clearfix">       
+							<div class="w85 text-right fl">发布时间：</div>
+							<div class="fl color-999 pl7">7小时前</div>
+						</div>
+						<div class="clearfix box-admin">
+							<div class="fl box-img">
+								<a href=""><img src="../images/icon-header.png" alt="" /></a>
+							</div>
+							<div class="fl clearfix">
+								<div class="clearfix mt18">
+									<div class="w61 text-right fl color-999">交易员：</div>
+									<div class="fl mt-4 ml7"><a class="color-A48 size-14" href="">1602号</a></div>
+								</div>
+								<div class="clearfix mt7">
+									<div class="w61 text-right fl color-999">电话：</div>
+									<div class="fl color-000 size-14 ml7">021-58901234</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right mt16 fl">
+						<div class="mt28">
+							<a class="color-000 link-price" href="">暂无报价</a>
+						</div>
+						<div>
+							<a href="" class="btn-120-40 center-block">报价</a>
+						</div>
+					</div>
+				</div>
+				<div id="page" class="text-center pt0">
+					<ul class="pagination">
+						<li>
+							<a href="#">
+								<span>上一页</span>
+							</a>
+						</li>
+						<li class="selected"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>...</li>
+						<li>
+							<a href="#">
+								<span>下一页</span>
+							</a>
+						</li>
+						<li class="pl20">
+							共3241页，到第
+							<input type="text" value="25" /> 页
+							<a href="">确定</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 			
 			<div class="w280 fr">
-				
+				<a class="link-helper2" href="">要进货，我们免费帮您找！</a>
+				<textarea class="text-need h125" name="" id="" cols="24" rows="10" placeholder="写下您的进货需求，规格、材质、品牌、价位等。收到信息后我们马上与您联系确认。"></textarea>
+				<a class="link-fbcgxq text-center size-18 family-w color-fff bg-f90" href="#">发布采购需求</a>
+				<div class="box-tianxie clearfix mt40">
+					<a href="">填写需求</a>
+					<a class="ml35" href="">选择报价</a>
+					<a class="ml32" href="">完成交易</a>
+				</div>
+				<h3 class="h3-bor text-center mt38">最新交易</h3>
+					<div class="box-deal overflow">
+						<div class="header">
+							<div class="row">
+								<div class="col-xs-6 col-sm-3">用户</div>
+								<div class="col-xs-6 col-sm-3">采购内容</div>
+								<div class="clearfix visible-xs-block"></div>
+								<div class="col-xs-6 col-sm-3">交易状态</div>
+								<div class="col-xs-6 col-sm-3">时间</div>
+							</div>
+						</div>
+						<div class="overflow">
+							<div class="body">
+								
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-f60" href="">交易成功</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-693" href="">付款完成</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">张**</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-A48" href="">真丝布料卷...</a>
+									</div>
+									<div class="clearfix visible-xs-block"></div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">在线下单</a>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<a class="color-666" href="">08:25</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
 			</div>
 			
 		</div>
@@ -274,5 +818,39 @@
 			});
 		</script>
 		<![endif]>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var $scroll = $(".box-deal .body");
+				var time = 1000;
+				var rowHeight = 26;
+				$scroll.timer = setInterval(function() {
+					$scroll.animate({
+						marginTop: -rowHeight + "px"
+					}, time, function(){
+						$scroll.css({
+							marginTop: 0 + "px"
+						});
+						$scroll.find(".row:eq(0)").appendTo($scroll);
+					});
+				}, time);
+				$scroll.on({
+					mouseover: function() {
+						clearInterval($scroll.timer);
+					},
+					mouseout: function() {
+						$scroll.timer = setInterval(function() {
+							$scroll.animate({
+								marginTop: -rowHeight + "px"
+							}, time, function(){
+								$scroll.css({
+									marginTop: 0 + "px"
+								});
+								$scroll.find(".row:eq(0)").appendTo($scroll);
+							});
+						}, time)
+					}
+				});
+			});
+		</script>
 	</body>
 </html>

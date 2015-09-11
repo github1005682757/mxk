@@ -21,11 +21,16 @@ a { text-decoration: none; cursor: pointer; }
 a:hover { text-decoration: underline; }
 .hover:hover { filter: alpha(opacity=70); /* For IE */ -moz-opacity: 0.7; /* For Mozilla */ opacity: 0.7; /* For FF */ }
 
+.mt-4{margin-top:-4px;}
 .mt5{margin-top:5px;}
 .mt7{margin-top:7px;}
 .mt14{margin-top:14px;}
 .mt15{margin-top:15px;}
 .mt16{margin-top:16px;}
+.mt18{margin-top:18px;}
+.mt28{margin-top:28px;}
+.mt38{margin-top:38px;}
+.mt40{margin-top:40px;}
 .mt44{margin-top:44px;}
 .mr6{ margin-right: 6px;}
 .mr10{ margin-right: 10px;}
@@ -39,16 +44,22 @@ a:hover { text-decoration: underline; }
 .ml21{ margin-left:21px;}
 .ml25{ margin-left:25px;}
 .ml31{ margin-left:31px;}
+.ml32{ margin-left:32px;}
+.ml35{ margin-left:35px;}
 .ml37{ margin-left:37px;}
 .ml50{ margin-left:50px;}
 
+.pt0{padding-top:0px!important;}
 .pt5{padding-top:5px;}
+.pt10{padding-top:10px;}
+.pt15{padding-top:15px;}
 .pt12{padding-top:12px;}
 .pt20{padding-top:20px;}
 .pt23{padding-top:23px;}
 .pt25{padding-top:25px;}
 .pt30{padding-top:30px;}
 .pb20{padding-bottom:20px;}
+.pl7{padding-left:7px;}
 .pl20{padding-left:20px;}
 
 .color-fff{ color:#fff;}
@@ -60,9 +71,10 @@ a:hover { text-decoration: underline; }
 .color-A48{color:#A4835B;}
 .color-000{color:#000;}
 .color-693{color:#693;}
-.color-A48{color:#A4835B;}
 .color-693{color:#693;}
 .color-ccc{color:#ccc;}
+.color-999{color:#999;}
+.color-399{color:#399;}
 
 .size-14{ font-size:14px;}
 .size-15{ font-size:15px;}
@@ -83,14 +95,18 @@ a:hover { text-decoration: underline; }
 .bor-f2f{border:1px solid #f2f2f2;}
 .bor-ddd{border:1px solid #ddd;}
 
+.w61{width:61px;}
 .w85{width:85px;}
 .w120{width:120px;}
 .w170{width:170px;}
 .w240{width:240px;}
 .w270{width:270px;}
+.w280{width:280px;}
 .w742{width:742px;}
 .w892{width:892px;}
 .w925{width:925px;}
+
+.h125{height:125px!important;}
 
 /*common*/
 table{ width:100%;}
@@ -105,6 +121,7 @@ table{ width:100%;}
 
 /*reset*/
 .col-xs-6{padding:0;}
+.col-sm-3{width:25%;}
 .row{margin:0;}
 .list-inline{margin:0;}
 .list-inline>li{padding:0;}
