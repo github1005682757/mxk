@@ -224,6 +224,7 @@ a:hover { text-decoration: underline; }
 .h125 { height: 125px !important; }
 
 /*common*/
+.pr{ position: relative; z-index: 1;}
 table { width: 100%; }
 .overflow { overflow: hidden; }
 .fl { float: left !important; display: inline; }
@@ -502,8 +503,8 @@ input[placeholder],
 .tb-pic a { display: table-cell; text-align: center; vertical-align: middle; }
 .tb-pic a img { vertical-align: middle; }
 .tb-pic a { *display: block; *font-family: Arial; *line-height: 1; }
-.tb-thumb { margin: 15px 0 0; overflow: hidden; }
-.tb-thumb li { margin-right: 10px; background: none repeat scroll 0 0 transparent; float: left; overflow: hidden; }
+.tb-thumb {position:absolute; top:0; left:0; height:62px; margin: 0; overflow: hidden; overflow:hidden;}
+.tb-thumb li { margin-left: 15px; background: none repeat scroll 0 0 transparent; float: left; overflow: hidden; }
 .tb-s310,
 .tb-s310 a { height: 360px; width: 360px; }
 .tb-s310,
@@ -521,6 +522,11 @@ input[placeholder],
 .zoomMask { position: absolute; background: url("../images/mask.png") repeat scroll 0 0 transparent; cursor: move; z-index: 1; }
 
 /*放大镜end*/
+.box-magnifying .btn-left,
+.box-magnifying .btn-right{width:20px; height:62px; line-height: 62px; text-align: center; background:#F9F9F9; cursor: pointer; opacity: 0.6; filter: alpha(opacity:60);}
+.box-magnifying .btn-left:hover,
+.box-magnifying .btn-right:hover{ opacity: 1; filter: alpha(opacity:100);}
+.box-magnifying .box-img{ width:320px; height:62px; overflow: hidden;}
 .box-collect { height: 52px; line-height: 52px; }
 .box-collect .link-share { padding-left: 17px; margin-right: 29px; background: url(../images/icon-linkshare.png) 0 -2px no-repeat; }
 .box-collect .link-collect { padding-left: 20px; background: url(../images/icon-collect.png) 0 -1px no-repeat; }
@@ -551,6 +557,7 @@ input[placeholder],
 .box-kefu .body { width: 161px; margin: 0 auto; }
 .list-work span { color: #666; font-family: "宋体"; }
 .box-kefu .link-pinpai { color: #fff; font-size: 16px; font-family: "微软雅黑"; width: 100%; height: 36px; line-height: 36px; display: block; background: #98856D; text-align: center; text-decoration: none; }
+.list-zjzh a{text-decoration: none;}
 .list-zjzh a,
 .list-zjzh a img { display: block; width: 160px; height: 177px; }
 .list-zjzh a img { position: relative; z-index: 1; }

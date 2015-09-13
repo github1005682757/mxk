@@ -91,34 +91,38 @@
 					<div class="tb-booth tb-pic tb-s310">
 						<a href="../images/01.jpg"><img src="../images/01_mid.jpg" alt="美女" rel="../images/01.jpg" class="jqzoom" /></a>
 					</div>
-					<div class="clearfix">
-						<ul class="tb-thumb" id="thumblist">
-							<li class="tb-selected">
-								<div class="tb-pic tb-s40">
-									<a><img src="../images/01_small.jpg" mid="../images/01_mid.jpg" big="../images/01.jpg"></a>
-								</div>
-							</li>
-							<li>
-								<div class="tb-pic tb-s40">
-									<a><img src="../images/02_small.jpg" mid="../images/02_mid.jpg" big="../images/02.jpg"></a>
-								</div>
-							</li>
-							<li>
-								<div class="tb-pic tb-s40">
-									<a><img src="../images/03_small.jpg" mid="../images/03_mid.jpg" big="../images/03.jpg"></a>
-								</div>
-							</li>
-							<li>
-								<div class="tb-pic tb-s40">
-									<a><img src="../images/04_small.jpg" mid="../images/04_mid.jpg" big="../images/04.jpg"></a>
-								</div>
-							</li>
-							<li>
-								<div class="tb-pic tb-s40">
-									<a><img src="../images/05_small.jpg" mid="../images/05_mid.jpg" big="../images/05.jpg"></a>
-								</div>
-							</li>
+					<div class="clearfix mt15">
+						<div class="fl btn-left glyphicon glyphicon-chevron-left"></div>
+						<div class="pr box-img fl">
+							<ul class="tb-thumb fl" id="thumblist">
+								<li class="tb-selected">
+									<div class="tb-pic tb-s40">
+										<a><img src="../images/01_small.jpg" mid="../images/01_mid.jpg" big="../images/01.jpg"></a>
+									</div>
+								</li>
+								<li>
+									<div class="tb-pic tb-s40">
+										<a><img src="../images/02_small.jpg" mid="../images/02_mid.jpg" big="../images/02.jpg"></a>
+									</div>
+								</li>
+								<li>
+									<div class="tb-pic tb-s40">
+										<a><img src="../images/03_small.jpg" mid="../images/03_mid.jpg" big="../images/03.jpg"></a>
+									</div>
+								</li>
+								<li>
+									<div class="tb-pic tb-s40">
+										<a><img src="../images/04_small.jpg" mid="../images/04_mid.jpg" big="../images/04.jpg"></a>
+									</div>
+								</li>
+								<li>
+									<div class="tb-pic tb-s40">
+										<a><img src="../images/05_small.jpg" mid="../images/05_mid.jpg" big="../images/05.jpg"></a>
+									</div>
+								</li>
 						</ul>
+						</div>
+						<div class="fl btn-right glyphicon glyphicon-chevron-right"></div>
 					</div>
 					<div class="clearfix box-collect">
 						<div class="fl">
@@ -144,7 +148,7 @@
 					<div class="clearfix box-guige">
 						<div class="left fl w90 pl15 pt5">选择规格</div>
 						<div class="fl">
-							<ul class="list-inline">
+							<ul class="list-inline list-selected">
 								<li class="selected"><a href="">规格1</a></li>
 								<li><a href="">规格2</a></li>
 								<li><a href="">规格3</a></li>
@@ -645,14 +649,64 @@
 		<![endif]>
 		<script>
 			$(document).ready(function(){
-				$(".jqzoom").imagezoom();
-				$("#thumblist li a").click(function(){
-					//增加点击的li的class:tb-selected，去掉其他的tb-selecte
-					$(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
-					//赋值属性
-					$(".jqzoom").attr('src',$(this).find("img").attr("mid"));
-					$(".jqzoom").attr('rel',$(this).find("img").attr("big"));
+				/*选择规格*/
+				$("body").on("click", ".list-selected li a", function(e){
+					var $parent = $(this).closest("li");
+					$parent.siblings(".selected").removeClass("selected").end().addClass("selected");
+					e.preventDefault();
 				});
+				/*数量*/
+				$("body").on("click", ".minus, .add", function(){
+					var $this = $(this);
+					var $value = $this.siblings(".value");
+					var iValue = parseInt($value.val());
+					if($this.hasClass("minus") && iValue > 0){
+						iValue -= 1;
+						$value.val(iValue);
+					}else if($this.hasClass("add")){
+						iValue += 1;
+						$value.val(iValue);
+					}
+				});
+				/*放大镜*/
+				(function(){
+					$(".jqzoom").imagezoom();
+					$("body").on("click", "#thumblist li a", function(){
+						//增加点击的li的class:tb-selected，去掉其他的tb-selecte
+						$(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+						//赋值属性
+						$(".jqzoom").attr('src',$(this).find("img").attr("mid"));
+						$(".jqzoom").attr('rel',$(this).find("img").attr("big"));
+					});
+					var $thumblist = $("#thumblist");
+					var $thumblistItems = $thumblist.find("li"); 
+					var iWidth = $thumblistItems.eq(0).width() + 15;
+					var num = 4;
+					$thumblist.css("width", $thumblistItems.length * iWidth);
+					//向左
+					if($thumblistItems.length > 4){
+						$("body").on("click", ".box-magnifying .btn-right", function(){
+							if(!$thumblist.is(":animated")){
+								$thumblist.animate({
+									marginLeft: "-" + iWidth + "px"
+								}, 500, function(){
+									$thumblist.find("li:eq(0)").appendTo($thumblist);
+									$thumblist.css("marginLeft", "0");
+								});
+							}
+						});
+						$("body").on("click", ".box-magnifying .btn-left", function(){
+							if(!$thumblist.is(":animated")){
+								$thumblist.find("li:last").prependTo($thumblist);
+								$thumblist.css("marginLeft", -iWidth + "px");
+								$thumblist.animate({
+									marginLeft: "0px"
+								}, 500, function(){
+								});
+							}
+						});
+					}
+				})();
 			});
 		</script>
 	</body>
