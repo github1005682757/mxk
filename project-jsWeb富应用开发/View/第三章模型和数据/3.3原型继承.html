@@ -6,12 +6,19 @@
 	</head>
 	<body>
 		<script>
+			if(typeof Object.create !== "function"){
+				Object.create = function(o){
+					function F(){}
+					F.prototype = o;
+					return new F();
+				}
+			}
 			var Model = {
 				inherited: function(){},
 				created: function(){},
 				prototype: {
-					init: function(name){
-						console.log(name);
+					init: function(str){
+						console.log(str);
 					}
 				},
 				create: function(){
@@ -29,10 +36,9 @@
 					return instance;
 				}
 			};
-			
 			var Asset = Model.create();
 			var User = Model.create();
-			var user = User.init("user");
+			var user = User.init("User"); 
 		</script>
 	</body>
 </html>
