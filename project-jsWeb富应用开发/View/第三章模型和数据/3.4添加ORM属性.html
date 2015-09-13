@@ -6,8 +6,69 @@
 	</head>
 	<body>
 		<script src="../../js/jquery-1.11.2.min.js"></script>
-		<script>
+		<script>			
+			if(typeof Object.create !== "function"){
+				Object.create = function(o){
+					function F(){}
+					F.prototype = o;
+					return new F();
+				}
+			}
+			var Model = {
+				inherited: function(){},
+				created: function(){},
+				prototype: {
+					init: function(str){
+						console.log(str);
+					}
+				},
+				create: function(){
+					var object = Object.create(this);
+					object.parent = this;
+					object.prototype = object.fn = Object.create(this.prototype);
+					object.created();
+					this.inherited(object);
+					return object;
+				},
+				init: function(){
+					var instance = Object.create(this.prototype);
+					instance.parent = this;
+					instance.init.apply(instance, arguments);
+					return instance;
+				},
+				extend: function(o){
+					var extended = o.extended;
+					jQuery.extend(this, o);
+					if(extended)
+						extended(this);
+				},
+				include: function(o){
+					var included = o.included;
+					jQuery.extend(this.prototype, o);
+					if(included)
+						include(this);
+				}
+			};
+			//添加对象属性
+			Model.extend({
+				find: function(name){
+					console.log(name);
+				}
+			});
+			//添加原型属性
+			Model.include({
+				init: function(attrs){	//覆盖了上面的的init方法
+					for(var attr in attrs){
+						console.log(attr + ": " + attrs[attr]);
+					}
+				},
+				load: function(attributes){}
+			});
 			
+			//使用
+			var Asset = Model.create();
+			var asset = Asset.init({name: "foo.png"});
+			Asset.find("张三");
 		</script>
 	</body>
 </html>
