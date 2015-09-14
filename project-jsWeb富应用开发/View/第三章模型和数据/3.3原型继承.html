@@ -5,6 +5,16 @@
 		<title></title>
 	</head>
 	<body>
+		<h1>原型继承</h1>
+		<p>
+			代码解析：
+		</p>
+		<p>
+			create()函数返回一个新对象，这个对象继承自Model对象，我们使用它来创建新模型。
+		</p>
+		<p>
+			init()函数返回一个新对象，它继承自Model.prototype。
+		</p>
 		<script>
 			if(typeof Object.create !== "function"){
 				Object.create = function(o){
