@@ -1,16 +1,66 @@
-<!DOCTYPE html>
 <html>
-	<head lang="en">
-		<meta charset="UTF-8">
-		<title></title>
-		<script src="js/jquery/jquery-1.11.2.min.js"></script>
-	</head>
-	<body>
+	<head>
+		<title>单选框的选择</title>
+
 		<script>
-			Function.prototype.alert = function(str){
-				document.write(str);
-			};
-			alert.alert(123);
+			function
+			 select() {
+				var radioGroups = document.form1.radioGroup;
+				var str = "";
+				for (var i = 0; i < radioGroups.length; i++) {
+					if (radioGroups[i].checked) {
+						switch (i) {
+							case 0:
+								str = "您选择的是10岁以下单选框"
+								break
+							case 1:
+								str = "您选择的是11-20岁之间单选框"
+								break
+							case 2:
+								str = "您选择的是21-30岁之间单选框"
+								break
+							case 3:
+								str = "您选择的是31-40岁之间单选框"
+								break
+							case 4:
+								str = "您选择的是41-50岁之间单选框"
+								break
+							case 5:
+								str = "您选择的是51-60岁之间单选框"
+								break
+							case 6:
+								str = "您选择的是61岁以上单选框"
+								break
+							default:
+								str = "您没有选择单选框"
+						}
+						alert(str);
+						return true;
+					}
+				}
+			}
 		</script>
+	</head>
+
+	<body>
+		<form name="form1" onclick="return select();">
+			<input type="radio" name="radioGroup" value="A">10岁以下
+			<br/>
+			<input type="radio" name="radioGroup" value="B">11-20岁之间
+			<br/>
+			<input type="radio" name="radioGroup" value="C">21-30岁之间
+			<br/>
+			<input type="radio" name="radioGroup" value="D">31-40岁之间
+			<br/>
+			<input type="radio" name="radioGroup" value="E">41-50岁之间
+			<br/>
+			<input type="radio" name="radioGroup" value="F">51-60岁之间
+			<br/>
+			<input type="radio" name="radioGroup" value="G">61岁以上
+			<br/>
+			<input type="submit" value="显示选项" />
+		</form>
+
 	</body>
+
 </html>

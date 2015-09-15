@@ -296,6 +296,7 @@ a:hover { color: #4594fd; }
 .pl5 { padding-left: 5px; }
 .pl15 { padding-left: 15px; }
 .pl9 { padding-left: 9px; }
+.p30-0{padding:30px 0;}
 /* header start */
 #header { width: 100%; min-width:1190px; height: 35px; line-height: 30px; background: #f3f3f3; }
 #header .link { padding: 0 5px 0 85px; height:35px; line-height:30px; }
