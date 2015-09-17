@@ -26,7 +26,7 @@
 .fwxx_xx_wenzi_warp {margin-top:20px;}
 .fwxx_xx_wenzi_left {float:left; width:920px;}
 .fwxx_xx_wenzi_left_title {border-bottom:#1369c0 2px solid;}
-.fwxx_xx_wenzi_left_title a {display:block; width:120px; height:35px; float:left; color:#333333; font-size:16px; font-family:"微软雅黑"; text-align:center; line-height:35px;}
+.fwxx_xx_wenzi_left_title a {display:block; width:120px; height:35px; float:left; color:#333333; font-size:16px; font-family:"微软雅黑"; text-align:center; line-height:35px;text-decoration: none;}
 .fwxx_xx_wenzi_left_title a span{color:#f60; font-size:16px; margin-left:5px;}
 .fwxx_xx_wenzi_left_title .selected a {background:#1369c0; color:#FFF; text-decoration:none;}
 .fwxx_xx_wenzi_left_title .selected a span{color:#fff;}

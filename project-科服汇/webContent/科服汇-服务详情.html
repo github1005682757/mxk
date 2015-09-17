@@ -416,16 +416,16 @@
 								<a class="normal" href="#server-example">服务样本</a>
 							</li>
 							<li value="1">
-								<a href="#">服务机构简介</a>
+								<a href="#fwjgjj">服务机构简介</a>
 							</li>
 							<li value="2">
-								<a href="#">
+								<a href="#jyjl">
 									交易记录
 									<span>6</span>
 								</a>
 							</li>
 							<li value="3">
-								<a href="#">
+								<a href="#yhpj">
 									用户评价
 									<span>10</span>
 								</a>
@@ -480,7 +480,7 @@
 							<h1 style="height:500px;">服务样本</h1>
 						</div>
 					</div>
-					<div class="fwxx_xx_wenzi_bianjishuru box_tab">
+					<div id="fwjgjj" class="fwxx_xx_wenzi_bianjishuru box_tab">
 						<p>
 							<a href="#">
 								<img class="ma" src="../images/icon_103.png" />
@@ -503,7 +503,7 @@
 						</p>
 						
 					</div>
-					<div class="box_tab">
+					<div id="jyjl" class="box_tab">
 						<table class="table01 w">
 							<thead>
 								<tr>
@@ -574,7 +574,7 @@
 							<a class="pl5 pr5" href="#">末页</a>
 						</div>
 					</div>
-					<div class="box_tab">
+					<div id="yhpj" class="box_tab">
 						<div class="box_evaluate">
 							<ul class="ls_fl clearfix">
 								<li>
@@ -901,7 +901,7 @@
 						$this.addClass("selected").removeClass("normal");
 					}
 				});
-				$(".ls_tab li").bind("mouseover",function(){
+				$(".ls_tab li").bind("click",function(){
 					var $tab = $(this).parents(".tabs");
 					var index = $(this).attr("value");
 					var $selected = $(this).siblings(".selected").removeClass("selected");
