@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<div id="content">
+			<!-- nav start -->
+			<div id="nav">
+				<ul>
+					<li class="active">
+						<a class="link-work">办公系统</a>
+						<ul>
+							<li>
+								<a href="platform.html?name=fwxtywglpt" target="iframe-main">泛微协同业务管理平台（B/S）</a>
+							</li>
+							<li>
+								<a href="#">泛微协同业务管理平台（B/S）</a>
+							</li>
+							<li>
+								<a href="#">公司网页版登录邮箱（B/S）</a>
+							</li>
+							<li>
+								<a href="#">上海办公系统登录平台（sangfor VPN C/S和B/S）</a>
+							</li>
+							<li>
+								<a href="#">昆明办公系统登录平台（hillstone VPN C/S）</a>
+							</li>
+							<li>
+								<a href="#">云文件系统登录平台（B/S）</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="link-bus">业务系统</a>
+						<ul>
+							<li>
+								<a href="#">信托综合业务管理系统V3.0-TCMP（B/S）</a>
+							</li>
+							<li>
+								<a href="#">信托计划登记过户系统V3.0-TA（B/S）</a>
+							</li>
+							<li>
+								<a href="#">监管报表报送系统V1.0+信托净资本管理系统V1.0-NCM（B/S）</a>
+							</li>
+							<li>
+								<a href="#">资产估值与会计核算系统V2.6-FA（C/S）</a>
+							</li>
+							<li>
+								<a href="#">证券资产管理综合业务系统V3.0-AM（C/S）</a>
+							</li>
+							<li>
+								<a href="#">资金清算系统-CC（C/S）</a>
+							</li>
+							<li>
+								<a href="#">云南国际信托云办公平台（B/S）</a>
+							</li>
+							<li>
+								<a href="#">云南国际信托证券结构化资产池（B/S）</a>
+							</li>
+							<li>
+								<a href="#">公司移动办公手机终端-昆明（juniper VPN C/S）</a>
+							</li>
+							<li>
+								<a href="#">金融互联网设备终端-上海（huawei VPN C/S）</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="link-deal">交易系统</a>
+						<ul>
+							<li>
+								<a href="#">云信O3.2交易系统交易客户端和查询客户端（juniper VPN C/S）</a>
+							</li>
+							<li>
+								<a href="#">国金道富O3.2交易客户端（C/S）</a>
+							</li>
+							<li>
+								<a href="#">云信O3.2交易系统客户端（HOMS C/S）</a>
+							</li>
+							<li>
+								<a href="#">云恒系统投资管理平台客户端（C/S）</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- nav end -->
+			<!-- main start -->
+			<div id="main">
+				<div id="address">
+					<ul class="list-inline">
+						<li>
+							<a>当前位置：</a>
+						</li>
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>/</li>
+						<li>
+							<a class="current" href="#">公告</a>
+						</li>
+					</ul>
+				</div>
+				<iframe name="iframe-main" src="notice.html" frameborder="0"></iframe>
+			</div>
+			<!-- main end -->
+		</div>
+		<div id="footer"></div>
+	</body>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#nav .active>ul").slideDown();
+			$("body").on("click", "#nav a", function(){
+				var $this = $(this);
+				var $next = $this.next("ul");
+				if($next.length == 1){
+					$("#nav .active").removeClass("active").find("ul").slideUp();
+					$next.slideDown();
+					$this.closest("li").addClass("active");
+				}
+			});
+		});
+	</script>
+</html>
