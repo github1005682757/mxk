@@ -669,3 +669,7 @@ a:hover { color: #c00; text-decoration:none; }
 #article .summary{ padding:25px 87px 0; font-family:"宋体"; color:#999; line-height:22px;}
 #article .article{ padding:0 42px;}
 #article .article .p{line-height:32px; font-size:16px; font-family:"宋体"; text-indent:2em;}
+
+/*大背景*/
+.body-orange{ background:url(../images/body-orange.jpg) center 0 no-repeat;}
+.body-blue{ background:url(../images/body-blue.jpg) center 0 no-repeat;}

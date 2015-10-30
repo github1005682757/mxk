@@ -120,13 +120,15 @@ GLOBAL.Slide.init = function(id) {
 		var width = $(this).width();
 		$(this).css("marginLeft", -width / 2 + "px");
 	});
+	$slide.find(".ls_img").css("background",$lsImg.eq(0).attr("data-bg"));
 	//btn点击事件绑定
 	$lsBtn.on({
 		click: function() {
 			var index = $(this).index();
 			if (!$lsImg.is(":animated")) {
 				$(this).siblings("li").removeClass("selected").end().addClass("selected");
-				$lsImg.removeClass("show").fadeOut("1200").eq(index).fadeIn("1000");
+				$lsImg.removeClass("show").fadeOut("1200").eq(index).fadeIn("1000").addClass("show");
+				$slide.find(".ls_img").css("background",$lsImg.eq(index).attr("data-bg"));
 				$slide.selectedIndex = index;
 			}
 		}
